@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+@theme {
+  /* Brand colors */
+  --color-tech-teal: #40BFCC;
+  --color-cool-charcoal: #171D24;
+  --color-cool-white: #E7F4F8;
+  --color-dark-teal: #2E8B9A;
+  --color-mute-blue: #A2CADB;
+  --color-body-text: #333333;
+
+  /* Typography */
+  --font-family-sans: var(--font-outfit), sans-serif;
+
+  /* Breakpoints (override Tailwind defaults) */
+  --breakpoint-sm: 375px;
+  --breakpoint-md: 768px;
+  --breakpoint-lg: 1280px;
+  --breakpoint-xl: 1440px;
+}
+
+@keyframes scroll {
+  from { transform: translateX(0); }
+  to { transform: translateX(-50%); }
+}
+
+@layer utilities {
+  .animate-marquee {
+    animation: scroll 20s linear infinite;
+  }
+}

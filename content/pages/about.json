@@ -1,0 +1,513 @@
+{
+  "slug": "about",
+  "title": "About",
+  "sections": [
+    {
+      "type": "heading",
+      "text": "About",
+      "tag": "h1"
+    },
+    {
+      "type": "image",
+      "src": "/images/pages/dsc-logo-about.png",
+      "alt": ""
+    },
+    {
+      "type": "heading",
+      "text": "COMPANY STORY",
+      "tag": "h2"
+    },
+    {
+      "type": "richText",
+      "html": "Many organizations recognize the need to better leverage their data, but struggle with where to start, how to structure their systems, or how to turn data into something that drives real business outcomes. As a result, data efforts often evolve in silos, leading to fragmented systems, inconsistent reporting, and workflows that rely heavily on manual effort."
+    },
+    {
+      "type": "richText",
+      "html": "DSC exists to bring clarity and structure to that challenge. We design and build data platforms and data-driven applications that support day-to-day operations, enable better decision-making, and create a foundation for advanced capabilities like AI and machine learning."
+    },
+    {
+      "type": "richText",
+      "html": "<p>DSC exists to bring clarity and structure to that challenge. We design and build data platforms and data-driven applications that support day-to-day operations, enable better decision-making, and create a foundation for advanced capabilities like AI and machine learning.</p><p> </p><p>Our work spans data architecture, engineering, analytics, software development, and applied AI, with a focus on building systems that are reliable, scalable, and aligned with how the business actually operates.</p><p> </p><p>Our team is fully based in North America, and we collaborate closely with internal teams and subject matter experts to ensure every solution reflects real-world workflows. We do not replace domain expertise. We help operationalize it by building systems that turn data into something teams can trust and act on.</p>"
+    },
+    {
+      "type": "richText",
+      "html": "<p><a href=\"https://datasolutionsinc.ca/work\">Our work</a> spans data architecture, engineering, analytics, software development, and applied AI, with a focus on building systems that are reliable, scalable, and aligned with how the business actually operates.</p>"
+    },
+    {
+      "type": "richText",
+      "html": "Our team is fully based in North America, and we collaborate closely with internal teams and subject matter experts to ensure every solution reflects real-world workflows. We do not replace domain expertise. We help operationalize it by building systems that turn data into something teams can trust and act on."
+    },
+    {
+      "type": "heading",
+      "text": "Leadership team",
+      "tag": "h2"
+    },
+    {
+      "type": "image",
+      "src": "/images/pages/Michael-Nandlall.webp",
+      "alt": "Michael Nandlall"
+    },
+    {
+      "type": "heading",
+      "text": "Michael Nandlall",
+      "tag": "h2"
+    },
+    {
+      "type": "heading",
+      "text": "Founder &amp; Chief Executive Officer",
+      "tag": "h2"
+    },
+    {
+      "type": "image",
+      "src": "/images/pages/linked-icon.png",
+      "alt": ""
+    },
+    {
+      "type": "image",
+      "src": "/images/pages/Nevin-Mahilal.webp",
+      "alt": "Nevin Mahilal"
+    },
+    {
+      "type": "heading",
+      "text": "Nevin Mahilal",
+      "tag": "h2"
+    },
+    {
+      "type": "heading",
+      "text": "Chief Technology Officer",
+      "tag": "h2"
+    },
+    {
+      "type": "image",
+      "src": "/images/pages/linked-icon.png",
+      "alt": ""
+    },
+    {
+      "type": "image",
+      "src": "/images/pages/Bryan-Guy.webp",
+      "alt": "Bryan Guy"
+    },
+    {
+      "type": "heading",
+      "text": "Bryan Guy",
+      "tag": "h2"
+    },
+    {
+      "type": "heading",
+      "text": "Chief Product Officer",
+      "tag": "h2"
+    },
+    {
+      "type": "image",
+      "src": "/images/pages/linked-icon.png",
+      "alt": ""
+    },
+    {
+      "type": "image",
+      "src": "/images/pages/Japneet-Jabbal.webp",
+      "alt": "Japneet Jabbal"
+    },
+    {
+      "type": "heading",
+      "text": "Japneet Jabbal",
+      "tag": "h2"
+    },
+    {
+      "type": "heading",
+      "text": "Manager, PMO",
+      "tag": "h2"
+    },
+    {
+      "type": "image",
+      "src": "/images/pages/linked-icon.png",
+      "alt": ""
+    },
+    {
+      "type": "image",
+      "src": "/images/pages/Hem-Joshi.webp",
+      "alt": "Hem Joshi"
+    },
+    {
+      "type": "heading",
+      "text": "Hem Joshi",
+      "tag": "h2"
+    },
+    {
+      "type": "heading",
+      "text": "Manager, Analytics &amp; Data Engineering",
+      "tag": "h2"
+    },
+    {
+      "type": "image",
+      "src": "/images/pages/linked-icon.png",
+      "alt": ""
+    },
+    {
+      "type": "image",
+      "src": "/images/pages/Abhishek-Ahluwalia.webp",
+      "alt": "Abhishek Ahluwalia"
+    },
+    {
+      "type": "heading",
+      "text": "Abhishek Ahluwalia",
+      "tag": "h2"
+    },
+    {
+      "type": "heading",
+      "text": "Manager, Sales",
+      "tag": "h2"
+    },
+    {
+      "type": "image",
+      "src": "/images/pages/linked-icon.png",
+      "alt": ""
+    },
+    {
+      "type": "image",
+      "src": "/images/pages/Maria-Mehkari.webp",
+      "alt": "Maria Mehkari"
+    },
+    {
+      "type": "heading",
+      "text": "Maria Mehkari ",
+      "tag": "h2"
+    },
+    {
+      "type": "heading",
+      "text": "Manager, Marketing",
+      "tag": "h2"
+    },
+    {
+      "type": "image",
+      "src": "/images/pages/linked-icon.png",
+      "alt": ""
+    },
+    {
+      "type": "image",
+      "src": "/images/pages/Noor-Aziz.webp",
+      "alt": ""
+    },
+    {
+      "type": "heading",
+      "text": "Noor Aziz",
+      "tag": "h2"
+    },
+    {
+      "type": "heading",
+      "text": "Chief People Officer",
+      "tag": "h2"
+    },
+    {
+      "type": "image",
+      "src": "/images/pages/linked-icon.png",
+      "alt": ""
+    },
+    {
+      "type": "image",
+      "src": "/images/pages/User-Profile-PNG.webp",
+      "alt": "Kevin Yuan"
+    },
+    {
+      "type": "heading",
+      "text": "Kevin Yuan",
+      "tag": "h2"
+    },
+    {
+      "type": "heading",
+      "text": "Solutions Architect",
+      "tag": "h2"
+    },
+    {
+      "type": "image",
+      "src": "/images/pages/linked-icon.png",
+      "alt": ""
+    },
+    {
+      "type": "image",
+      "src": "/images/pages/Michael-Nandlall.webp",
+      "alt": "Michael Nandlall"
+    },
+    {
+      "type": "heading",
+      "text": "Michael Nandlall",
+      "tag": "h2"
+    },
+    {
+      "type": "heading",
+      "text": "Founder &amp; Chief Executive Officer",
+      "tag": "h2"
+    },
+    {
+      "type": "image",
+      "src": "/images/pages/linked-icon.png",
+      "alt": ""
+    },
+    {
+      "type": "image",
+      "src": "/images/pages/Nevin-Mahilal.webp",
+      "alt": "Nevin Mahilal"
+    },
+    {
+      "type": "heading",
+      "text": "Nevin Mahilal",
+      "tag": "h2"
+    },
+    {
+      "type": "heading",
+      "text": "Chief Technology Officer",
+      "tag": "h2"
+    },
+    {
+      "type": "image",
+      "src": "/images/pages/linked-icon.png",
+      "alt": ""
+    },
+    {
+      "type": "image",
+      "src": "/images/pages/Bryan-Guy.webp",
+      "alt": "Bryan Guy"
+    },
+    {
+      "type": "heading",
+      "text": "Bryan Guy",
+      "tag": "h2"
+    },
+    {
+      "type": "heading",
+      "text": "Chief Product Officer",
+      "tag": "h2"
+    },
+    {
+      "type": "image",
+      "src": "/images/pages/linked-icon.png",
+      "alt": ""
+    },
+    {
+      "type": "image",
+      "src": "/images/pages/Japneet-Jabbal.webp",
+      "alt": "Japneet Jabbal"
+    },
+    {
+      "type": "heading",
+      "text": "Japneet Jabbal",
+      "tag": "h2"
+    },
+    {
+      "type": "heading",
+      "text": "Manager, PMO",
+      "tag": "h2"
+    },
+    {
+      "type": "image",
+      "src": "/images/pages/linked-icon.png",
+      "alt": ""
+    },
+    {
+      "type": "image",
+      "src": "/images/pages/Hem-Joshi.webp",
+      "alt": "Hem Joshi"
+    },
+    {
+      "type": "heading",
+      "text": "Hem Joshi",
+      "tag": "h2"
+    },
+    {
+      "type": "heading",
+      "text": "Manager, Analytics &amp; Data Engineering",
+      "tag": "h2"
+    },
+    {
+      "type": "image",
+      "src": "/images/pages/linked-icon.png",
+      "alt": ""
+    },
+    {
+      "type": "image",
+      "src": "/images/pages/Abhishek-Ahluwalia.webp",
+      "alt": "Abhishek Ahluwalia"
+    },
+    {
+      "type": "heading",
+      "text": "Abhishek Ahluwalia",
+      "tag": "h2"
+    },
+    {
+      "type": "heading",
+      "text": "Manager, Sales",
+      "tag": "h2"
+    },
+    {
+      "type": "image",
+      "src": "/images/pages/linked-icon.png",
+      "alt": ""
+    },
+    {
+      "type": "image",
+      "src": "/images/pages/Maria-Mehkari.webp",
+      "alt": "Maria Mehkari"
+    },
+    {
+      "type": "heading",
+      "text": "Maria Mehkari",
+      "tag": "h2"
+    },
+    {
+      "type": "heading",
+      "text": "Manager, Marketing",
+      "tag": "h2"
+    },
+    {
+      "type": "image",
+      "src": "/images/pages/linked-icon.png",
+      "alt": ""
+    },
+    {
+      "type": "image",
+      "src": "/images/pages/Noor-Aziz.png",
+      "alt": "Noor Aziz"
+    },
+    {
+      "type": "heading",
+      "text": "Noor Aziz",
+      "tag": "h2"
+    },
+    {
+      "type": "heading",
+      "text": "Chief People Officer",
+      "tag": "h2"
+    },
+    {
+      "type": "image",
+      "src": "/images/pages/linked-icon.png",
+      "alt": ""
+    },
+    {
+      "type": "image",
+      "src": "/images/pages/User-Profile-PNG.webp",
+      "alt": "Kevin Yuan"
+    },
+    {
+      "type": "heading",
+      "text": "Kevin Yuan",
+      "tag": "h2"
+    },
+    {
+      "type": "heading",
+      "text": "Solutions Architect",
+      "tag": "h2"
+    },
+    {
+      "type": "image",
+      "src": "/images/pages/linked-icon.png",
+      "alt": ""
+    },
+    {
+      "type": "heading",
+      "text": "How We Work",
+      "tag": "h2"
+    },
+    {
+      "type": "richText",
+      "html": "<p>Our approach is collaborative, structured, and focused on building strong foundations. We work closely with internal teams <br />to understand how data is used today, where it breaks down, and what is required to create systems that can be trusted as the <br />business grows.</p>"
+    },
+    {
+      "type": "richText",
+      "html": "<p>Our approach is collaborative, structured, and focused on building strong foundations.</p><p>We work closely with internal teams to understand how data is used today, where it breaks down, and what is required to create systems that can be trusted as the business grows.</p>"
+    },
+    {
+      "type": "heading",
+      "text": "Discovery and Alignment",
+      "tag": "h2"
+    },
+    {
+      "type": "richText",
+      "html": "We start by understanding your business context, data landscape, and decision-making needs. This includes reviewing source systems, existing reporting, and key metrics. The goal is to align early on priorities, constraints, and what success looks like, so there are no surprises later."
+    },
+    {
+      "type": "heading",
+      "text": "Architecture and Planning",
+      "tag": "h2"
+    },
+    {
+      "type": "richText",
+      "html": "We design a data architecture tailored to your needs, with an emphasis on clarity, reliability, and long-term usability. This includes data models, integration patterns, access considerations, and governance foundations. Solutions are scoped deliberately so delivery remains predictable and teams know exactly what will be built and why."
+    },
+    {
+      "type": "heading",
+      "text": "Build and Implementation",
+      "tag": "h2"
+    },
+    {
+      "type": "richText",
+      "html": "<p>We implement in focused phases, working alongside your team rather than in a black box. Data pipelines, transformations, models, and analytics are built with reliability and maintainability in mind. Throughout the build, we validate outputs, communicate progress clearly, and address issues early.</p>"
+    },
+    {
+      "type": "heading",
+      "text": "Validation and Enablement",
+      "tag": "h2"
+    },
+    {
+      "type": "richText",
+      "html": "Before handoff, we ensure systems are accurate, stable, and ready for day-to-day use. This includes data validation, documentation, and walkthroughs with the teams who will own the platform. The goal is a strong, usable foundation that teams can build on confidently, not an attempt to solve every problem at once."
+    },
+    {
+      "type": "heading",
+      "text": "Ongoing Support and Next Steps",
+      "tag": "h2"
+    },
+    {
+      "type": "richText",
+      "html": "After delivery, we remain available to support refinements, extensions, and new use cases as needs evolve. Whether that means expanding analytics, adding governance, or preparing for AI and machine learning, we focus on keeping the platform reliable while helping teams plan what comes next."
+    },
+    {
+      "type": "heading",
+      "text": "Discovery and Alignment",
+      "tag": "h2"
+    },
+    {
+      "type": "richText",
+      "html": "<p> We start by understanding your business context, data landscape, and decision-making needs. This includes reviewing source systems, existing reporting, and key metrics. The goal is to align early on priorities, constraints, and what success looks like, so there are no surprises later.</p>"
+    },
+    {
+      "type": "heading",
+      "text": "Architecture and Planning",
+      "tag": "h2"
+    },
+    {
+      "type": "richText",
+      "html": "<p>We design a data architecture tailored to your needs, with an emphasis on clarity, reliability, and long-term usability. This includes data models, integration patterns, access considerations, and governance foundations. Solutions are scoped deliberately so delivery remains predictable and teams know exactly what will be built and why.</p>"
+    },
+    {
+      "type": "heading",
+      "text": "Build and Implementation",
+      "tag": "h2"
+    },
+    {
+      "type": "richText",
+      "html": "<p>We implement in focused phases, working alongside your team rather than in a black box. Data pipelines, transformations, models, and analytics are built with reliability and maintainability in mind. Throughout the build, we validate outputs, communicate progress clearly, and address issues early.</p>"
+    },
+    {
+      "type": "heading",
+      "text": "Validation and Enablement",
+      "tag": "h2"
+    },
+    {
+      "type": "richText",
+      "html": "<p>Before handoff, we ensure systems are accurate, stable, and ready for day-to-day use. This includes data validation, documentation, and walkthroughs with the teams who will own the platform. The goal is a strong, usable foundation that teams can build on confidently, not an attempt to solve every problem at once.</p>"
+    },
+    {
+      "type": "heading",
+      "text": "Ongoing Support and Next Steps",
+      "tag": "h2"
+    },
+    {
+      "type": "richText",
+      "html": "<p>After delivery, we remain available to support refinements, extensions, and new use cases as needs evolve. Whether that means expanding analytics, adding governance, or preparing for AI and machine learning, we focus on keeping the platform reliable while helping teams plan what comes next.</p>"
+    }
+  ],
+  "seo": {
+    "title": "About Us | Data Analytics Company in Canada | DSC",
+    "description": "Data Solutions Consulting helps businesses use data, analytics, and AI to improve outcomes, boost efficiency, and support long-term growth. Contact us."
+  }
+}

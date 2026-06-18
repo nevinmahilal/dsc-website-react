@@ -1,0 +1,16 @@
+{
+  "slug": "modernizing-data-ingestion-and-reducing-integration-costs-2",
+  "title": "Automated Financial Reporting with Trusted Data",
+  "excerpt": "A large membership-based organization relied on manual financial reporting with inconsistent data pulls, unreliable forecasts, and limited visibility into revenue and expenses.",
+  "body": "",
+  "serviceTags": [],
+  "industry": "",
+  "techStack": [],
+  "seo": {
+    "title": "Automated Financial Reporting with Trusted Data",
+    "description": "A large membership-based organization relied on manual financial reporting with inconsistent data pulls, unreliable forecasts, and limited visibility into revenue and expenses."
+  },
+  "challenge": "A large membership-based organization relied on manual financial reporting with inconsistent data pulls, unreliable forecasts, and limited visibility into revenue and expenses.",
+  "whatWeDid": "Automated ingestion from financial and operational systems, resolved historical data discrepancies, and built analytics-ready models to support executive-level financial dashboards.",
+  "outcome": "Accurate, trusted financial reporting with clear year-over-year visibility. Leadership gained confidence in forecasts, and the finance team eliminated manual reporting work."
+}

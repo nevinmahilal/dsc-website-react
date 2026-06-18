@@ -1,0 +1,25 @@
+{
+  "slug": "unified-financial-and-sales-insights-from-raw-data-to-executive-dashboards",
+  "title": "Unified Financial and Sales Insights: From Raw Data to Executive Dashboards",
+  "excerpt": "Integrated Microsoft Dynamics, E21, and Chempax into Snowflake and delivered real time Finance and Sales dashboards in Power BI to enable unified, granular, and year over year business insights.",
+  "body": "<!-- wp:paragraph -->\n<p>Integrated Microsoft Dynamics, E21, and Chempax into Snowflake and delivered real time Finance and Sales dashboards in Power BI to enable unified, granular, and year over year business insights.</p>\n<!-- /wp:paragraph -->",
+  "serviceTags": [
+    "BI & Analytics",
+    "Dashboard Development",
+    "Data Engineering",
+    "Data Warehousing"
+  ],
+  "industry": "Industry 1",
+  "techStack": [
+    "Airbyte",
+    "dbt",
+    "Power Bi",
+    "Snowflake"
+  ],
+  "seo": {
+    "title": "Financial & Sales Insights to Executive Dashboards",
+    "description": "Turn raw financial and sales data into executive dashboards with Data Solutions Consulting. Improve reporting clarity and decision speed. Read more."
+  },
+  "challenge": "A prominent manufacturer relied heavily on Microsoft Dynamics Business Central for reporting, limiting accessibility and flexibility for Finance and Sales teams. Data could not be combined across Microsoft Dynamics, E21, and Chempax, resulting in fragmented insights and limited cross business visibility.\n\n&nbsp;\n\nTeams were unable to analyze multiple business units collectively, filter metrics at daily, weekly, or monthly granularities, or efficiently perform year over year comparisons. Strategic forecasting and consolidated reporting were cumbersome and manual.",
+  "whatWeDid": "We designed and implemented an end to end modern data stack to centralize financial and sales data.\n\nData from Microsoft Dynamics Business Central, E21, and Chempax was ingested into Snowflake using Airbyte. For legacy systems E21 and Chempax, a one time data dump was performed to avoid unnecessary ongoing pipeline costs. For Dynamics, a custom connector was developed to extract required tables such as invoices, general ledger, and chart of accounts per business unit.\n\nUsing dbt, we modeled analytics ready datasets powering two purpose built dashboards. Finance and Sales data models were built independently with modular views and joined on standardized keys including date, account, and entity identifiers to ensure accurate rollups and real time tracking.\n\nPower BI dashboards were connected directly to Snowflake, enabling interactive, real time reporting for executive and operational users."
+}

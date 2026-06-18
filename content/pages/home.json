@@ -1,0 +1,309 @@
+{
+  "slug": "home",
+  "title": "Home",
+  "hero": {
+    "headline": "Data and Analytics Consulting That Drives Business Growth",
+    "subheading": "Enterprise-grade data platforms. Boutique attention.",
+    "ctaLabel": "See Our Work",
+    "ctaHref": "/work/",
+    "backgroundImage": "/images/hero/banner-dsc.png"
+  },
+  "sections": [
+    {
+      "type": "heading",
+      "text": "CUSTOMERS",
+      "tag": "h2"
+    },
+    {
+      "type": "imageCarousel",
+      "images": [
+        {
+          "url": "/images/logos/logo-marquee/Layer_1.png",
+          "alt": ""
+        },
+        {
+          "url": "/images/logos/logo-marquee/Layer_1-1.png",
+          "alt": ""
+        },
+        {
+          "url": "/images/logos/logo-marquee/Layer_1-2.png",
+          "alt": ""
+        },
+        {
+          "url": "/images/logos/logo-marquee/Layer_1-3.png",
+          "alt": ""
+        },
+        {
+          "url": "/images/logos/logo-marquee/netskope-black-1.png",
+          "alt": ""
+        },
+        {
+          "url": "/images/logos/logo-marquee/rsac_conference_logo-dark-1.png",
+          "alt": ""
+        },
+        {
+          "url": "/images/logos/logo-marquee/fn-black-1.png",
+          "alt": ""
+        },
+        {
+          "url": "/images/logos/logo-marquee/Julie_Logo_Blackf-1.png",
+          "alt": ""
+        }
+      ]
+    },
+    {
+      "type": "heading",
+      "text": "What We Do",
+      "tag": "h2"
+    },
+    {
+      "type": "heading",
+      "text": "Data Architecture \n&amp; Governance",
+      "tag": "h2"
+    },
+    {
+      "type": "richText",
+      "html": "Designing secure, scalable data architectures with clear ownership, access controls, and definitions—so teams trust the data and regulators do too."
+    },
+    {
+      "type": "heading",
+      "text": "Data / Cloud Migrations",
+      "tag": "h2"
+    },
+    {
+      "type": "richText",
+      "html": "Migrating data platforms and analytics workloads to modern cloud environments with minimal downtime, validated results, and careful coordination across downstream teams."
+    },
+    {
+      "type": "heading",
+      "text": "Data \nEngineering",
+      "tag": "h2"
+    },
+    {
+      "type": "richText",
+      "html": "Building and maintaining production-grade data systems—including ingestion pipelines, transformation logic, and analytics-ready data models—\nso downstream reporting and applications are reliable and easy to extend. "
+    },
+    {
+      "type": "heading",
+      "text": "Business \nIntelligence",
+      "tag": "h2"
+    },
+    {
+      "type": "richText",
+      "html": "Building self-serve dashboards with clear, agreed-upon metrics—so leaders trust the numbers and teams act on them. "
+    },
+    {
+      "type": "heading",
+      "text": "AI &amp; Machine \nLearning",
+      "tag": "h2"
+    },
+    {
+      "type": "richText",
+      "html": "Using AI and machine learning where they add real value, deploying models that are transparent, auditable, and integrated into existing data platforms."
+    },
+    {
+      "type": "heading",
+      "text": "Software Engineering ",
+      "tag": "h2"
+    },
+    {
+      "type": "richText",
+      "html": "<p>Designing and building custom data-driven applications that capture, unify, and operationalize business-critical data so teams can run operations, make faster decisions, and gain visibility into their systems. We focus on solutions where data is central to the workflow, integrating seamlessly with your existing data platform to deliver scalable, secure, and high-impact software.</p>"
+    },
+    {
+      "type": "heading",
+      "text": "Data Architecture \n&amp; Governance",
+      "tag": "h2"
+    },
+    {
+      "type": "richText",
+      "html": "Designing secure, scalable data architectures with clear ownership, access controls, and definitions—so teams trust the data and regulators do too."
+    },
+    {
+      "type": "heading",
+      "text": "Data / Cloud Migrations",
+      "tag": "h2"
+    },
+    {
+      "type": "richText",
+      "html": "Migrating data platforms and analytics workloads to modern cloud environments with minimal downtime, validated results, and careful coordination across downstream teams."
+    },
+    {
+      "type": "heading",
+      "text": "Data \nEngineering",
+      "tag": "h2"
+    },
+    {
+      "type": "richText",
+      "html": "Building and maintaining production-grade data systems—including ingestion pipelines, transformation logic, and analytics-ready data models—\nso downstream reporting and applications are reliable and easy to extend. "
+    },
+    {
+      "type": "heading",
+      "text": "Business \nIntelligence",
+      "tag": "h2"
+    },
+    {
+      "type": "richText",
+      "html": "Building self-serve dashboards with clear, agreed-upon metrics—so leaders trust the numbers and teams act on them. "
+    },
+    {
+      "type": "heading",
+      "text": "AI &amp; Machine \nLearning",
+      "tag": "h2"
+    },
+    {
+      "type": "richText",
+      "html": "Using AI and machine learning where they add real value, deploying models that are transparent, auditable, and integrated into existing data platforms."
+    },
+    {
+      "type": "heading",
+      "text": "Software Engineering",
+      "tag": "h2"
+    },
+    {
+      "type": "richText",
+      "html": "<p>Designing and building custom data-driven applications that capture, unify, and operationalize business-critical data so teams can run operations, make faster decisions, and gain visibility into their systems.</p><p>We focus on solutions where data is central to the workflow, integrating seamlessly with your existing data platform to deliver scalable, secure, and high-impact software.</p>"
+    },
+    {
+      "type": "image",
+      "src": "/images/pages/qoutee1.png",
+      "alt": "Quote Icon"
+    },
+    {
+      "type": "heading",
+      "text": "Why DSC?",
+      "tag": "h2"
+    },
+    {
+      "type": "heading",
+      "text": "High-quality work, done properly",
+      "tag": "h2"
+    },
+    {
+      "type": "richText",
+      "html": "<p>We design and build data systems the way we would for our own teams—clean architecture, clear models, and production-ready delivery.</p>"
+    },
+    {
+      "type": "heading",
+      "text": "Clear communication throughout",
+      "tag": "h2"
+    },
+    {
+      "type": "richText",
+      "html": "No black boxes. We explain what we’re building, why it matters, and how it works, so your team can operate it with confidence."
+    },
+    {
+      "type": "heading",
+      "text": "Reliable delivery you can count on",
+      "tag": "h2"
+    },
+    {
+      "type": "richText",
+      "html": "Projects run predictably, systems stay stable, and when something needs attention, it gets addressed quickly and thoroughly."
+    },
+    {
+      "type": "heading",
+      "text": "High-quality work, done properly",
+      "tag": "h2"
+    },
+    {
+      "type": "richText",
+      "html": "We design and build data systems the way we would for our own teams—clean architecture, clear models, and production-ready delivery. "
+    },
+    {
+      "type": "heading",
+      "text": "Clear communication throughout",
+      "tag": "h2"
+    },
+    {
+      "type": "richText",
+      "html": "No black boxes. We explain what we’re building, why it matters, and how it works, so your team can operate it with confidence."
+    },
+    {
+      "type": "heading",
+      "text": "Reliable delivery you can count on",
+      "tag": "h2"
+    },
+    {
+      "type": "richText",
+      "html": "Projects run predictably, systems stay stable, and when something needs attention, it gets addressed quickly and thoroughly."
+    },
+    {
+      "type": "heading",
+      "text": "Built by DSC",
+      "tag": "h2"
+    },
+    {
+      "type": "richText",
+      "html": "We build internal tools to solve recurring data and infrastructure problems and productize the ones our clients benefit from most."
+    },
+    {
+      "type": "cta",
+      "label": "Learn More",
+      "href": "/dsc-optimizer/"
+    },
+    {
+      "type": "image",
+      "src": "/images/pages/built1.png",
+      "alt": "DSC Optimizer Dashboard View"
+    },
+    {
+      "type": "image",
+      "src": "/images/pages/built2.png",
+      "alt": "Cloud Data Analytics"
+    },
+    {
+      "type": "image",
+      "src": "/images/pages/built3.png",
+      "alt": "Cloud Data Framework"
+    },
+    {
+      "type": "image",
+      "src": "/images/pages/build-right.png",
+      "alt": "Cloud Cost Optimization"
+    },
+    {
+      "type": "heading",
+      "text": "Cloud cost optimization for data platforms.",
+      "tag": "h2"
+    },
+    {
+      "type": "richText",
+      "html": "<p>Monitors usage, highlights inefficiencies, and recommends changes to reduce spend.</p>"
+    },
+    {
+      "type": "heading",
+      "text": "PARTNERS",
+      "tag": "h2"
+    },
+    {
+      "type": "imageCarousel",
+      "images": [
+        {
+          "url": "/images/logos/logo-marquee/Snowflake_Logo-1.png",
+          "alt": ""
+        },
+        {
+          "url": "/images/logos/logo-marquee/623207e2dc0af278743f76be_airbyte-1.png",
+          "alt": ""
+        },
+        {
+          "url": "/images/logos/logo-marquee/Tableau_Logo-1.png",
+          "alt": ""
+        },
+        {
+          "url": "/images/logos/logo-marquee/dbt-logo-w-1.png",
+          "alt": ""
+        },
+        {
+          "url": "/images/logos/logo-marquee/dbt-logo-w-1.png",
+          "alt": ""
+        }
+      ]
+    }
+  ],
+  "seo": {
+    "title": "Data Analytics, Integration & Intelligence Solutions | DSC",
+    "description": "Data Solutions Consulting builds reliable data platforms for Canadian businesses with consulting, engineering, and analytics solutions. Get in touch today."
+  }
+}

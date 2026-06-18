@@ -1,0 +1,16 @@
+{
+  "slug": "unifying-marketing-data-across-disparate-platforms",
+  "title": "Unifying Marketing Data Across Disparate Platforms",
+  "excerpt": "A data-driven organization managed performance data across numerous advertising and lead-generation platforms, each with inconsistent schemas and ingestion constraints.",
+  "body": "",
+  "serviceTags": [],
+  "industry": "",
+  "techStack": [],
+  "seo": {
+    "title": "Unifying Marketing Data Across Disparate Platforms",
+    "description": "A data-driven organization managed performance data across numerous advertising and lead-generation platforms, each with inconsistent schemas and ingestion constraints."
+  },
+  "challenge": "A data-driven organization managed performance data across numerous advertising and lead-generation platforms, each with inconsistent schemas and ingestion constraints.",
+  "whatWeDid": "Designed ingestion pipelines combining standard connectors and custom integrations, modeled and consolidated data into a unified warehouse, and standardized KPIs for reporting.",
+  "outcome": "A single, reliable source of truth for marketing performance, enabling teams to optimize spend and make decisions with confidence."
+}

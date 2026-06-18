@@ -1,0 +1,28 @@
+{
+  "items": [
+    { "label": "Home", "href": "/" },
+    { "label": "Work", "href": "/work/" },
+    {
+      "label": "About",
+      "children": [
+        { "label": "Careers", "href": "/careers/" }
+      ]
+    },
+    {
+      "label": "Resources",
+      "children": [
+        { "label": "Case Studies", "href": "/case-studies/" },
+        { "label": "Our Blog", "href": "/our-blog/" },
+        { "label": "Dashboards", "href": "/dashboards/" },
+        {
+          "label": "Tools",
+          "href": "#",
+          "children": [
+            { "label": "DSC Optimizer", "href": "/dsc-optimizer/" }
+          ]
+        }
+      ]
+    },
+    { "label": "Get In Touch", "href": "/contact/", "isCTA": true }
+  ]
+}

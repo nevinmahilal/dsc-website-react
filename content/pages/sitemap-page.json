@@ -1,0 +1,9 @@
+{
+  "slug": "sitemap-page",
+  "title": "Sitemap",
+  "body": "<h1>Sitemap</h1>\n<ul>\n \t<li>Home</li>\n \t<li><a href=\"https://dsc-website.local/about/\">\nAbout\n</a></li>\n \t<li><a href=\"https://dsc-website.local/services\">\nServices\n</a></li>\n \t<li><a href=\"https://dsc-website.local/contact/\">\nContact\n</a></li>\n \t<li><a href=\"https://dsc-website.local/accessibility/\">\nAccessibility\n</a></li>\n \t<li><a href=\"https://dsc-website.local/our-blog/\">\nOur-blog\n</a></li>\n \t<li><a href=\"https://dsc-website.local/careers/\">\nCareers\n</a></li>\n \t<li><a href=\"https://dsc-website.local/case-studies/\">\nCase Studies\n</a></li>\n \t<li><a href=\"https://dsc-website.local/dsc-optimizer/\">\nDSC Optimizer\n</a></li>\n \t<li><a href=\"https://dsc-website.local/terms-and-conditions/\">\nTerms &amp; Condition\n</a></li>\n \t<li><a href=\"https://dsc-website.local/try-dsc-optimizer/\">\nTry Dsc Optimizer\n</a></li>\n \t<li><a href=\"https://dsc-website.local/privacy-policy/\">\nPrivacy Policy\n</a></li>\n \t<li><a href=\"https://dsc-website.local/work/\">\nWork\n</a></li>\n</ul>",
+  "seo": {
+    "title": "Sitemap",
+    "description": "Sitemap"
+  }
+}

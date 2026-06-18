@@ -1,0 +1,18 @@
+{
+  "slug": "financial-health-runaway",
+  "title": "Financial Health & Runaway",
+  "excerpt": "This dashboard connects your general ledger, bank reconciliation, and revenue forecast into one view so you always know how much runway you have...",
+  "body": "<iframe \n    title=\"Finance\"\n    width=\"1600\"\n    height=\"1027\"\n    src=\"https://app.powerbi.com/view?r=eyJrIjoiODQ0MDZjMDctYTNiMS00MDgxLWJmNDgtYWFmNzA0MmMzMzg4IiwidCI6IjI0YTk2ZTU2LWJhMzctNGIzZi04N2JlLWViYmNhYmQ0ZWU5MSJ9\"\n    frameborder=\"0\"\n    allowFullScreen=\"true\">\n</iframe>",
+  "persona": "Financial",
+  "tools": [
+    "PowerBi"
+  ],
+  "useCases": [
+    "Executive Reporting",
+    "Financial Analytics"
+  ],
+  "seo": {
+    "title": "Financial Health & Runaway",
+    "description": "This dashboard connects your general ledger, bank reconciliation, and revenue forecast into one view so you always know how much runway you have..."
+  }
+}

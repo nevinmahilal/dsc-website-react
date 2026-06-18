@@ -1,0 +1,12 @@
+{
+  "slug": "contact",
+  "title": "Contact",
+  "intro": "Meet with our team of experts",
+  "contactDetails": {
+    "email": "info@datasolutionsinc.ca"
+  },
+  "seo": {
+    "title": "Contact Us | Data Management Consulting | DSC",
+    "description": "Contact Data Solutions Consulting to discuss data platforms, reporting, and system builds tailored to your business. Speak with our team today."
+  }
+}

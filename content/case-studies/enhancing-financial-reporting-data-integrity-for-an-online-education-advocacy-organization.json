@@ -1,0 +1,24 @@
+{
+  "slug": "enhancing-financial-reporting-data-integrity-for-an-online-education-advocacy-organization",
+  "title": "Enhancing Financial Reporting & Data Integrity for an Online Education & Advocacy Organization",
+  "excerpt": "DSC delivered a comprehensive financial data overhaul, building out advanced reporting, automating manual processes, and tightening data quality across the board.",
+  "body": "",
+  "serviceTags": [
+    "Business Intelligence & Reporting",
+    "Data Engineering",
+    "Financial Analytics"
+  ],
+  "industry": "Industry 3",
+  "techStack": [
+    "Airbyte",
+    "dbt",
+    "Snowflake",
+    "Tableau"
+  ],
+  "seo": {
+    "title": "Automated Survey Analysis and Data Visualization",
+    "description": "Survey analysis, automated dashboards, and scalable visualizations improved reporting efficiency and insights with Data Solutions Consulting. Learn more."
+  },
+  "challenge": "An online education and advocacy organization, with over 1,000,000 members, faced the critical challenge of enhancing its financial reporting, data integrity, and overall data management processes. As the organization rapidly expanded, the need for precise financial oversight and robust data systems became paramount. To address these challenges, the organization embarked on an ambitious project aimed at streamlining operations, improving financial visibility, and ensuring accurate data management.",
+  "whatWeDid": "DSC delivered a comprehensive financial data overhaul, building out advanced reporting, automating manual processes, and tightening data quality across the board. Using Sigma, the team created custom visuals for year-over-year comparisons of expenses, net profit, and gross revenue, alongside actual-versus-forecast views that gave the organization a much clearer read on financial performance. Profit and loss summaries with year-to-date forecasts were layered in, incorporating gross margin, cost breakdowns, and operating expenses to support more forward-looking financial planning. On the data quality side, DSC investigated and resolved discrepancies in data pulls, corrected budget allocation and COGS/expense issues, and validated records against external sources to ensure reporting accuracy.\n\nTo streamline operations, DSC automated the QuickBooks data load process through Airbyte, replacing error-prone manual workflows with scheduled tasks and cutting down on human error. Detailed financial reports were built to track revenue by product and funnel, refunds, payroll, and marketing expenses across multiple sales channels. DSC also integrated Everflow, ClickUp, and Google Sheets with Airbyte, Snowflake, and dbt, using dbt transformations to keep data clean and consistent throughout the pipeline. Custom ClickUp models were developed for task and time tracking, giving the organization visibility into resource allocation and productivity. Finance models pulling from Braintree, platform transactions, and QuickBooks rounded out the work, providing a structured, end-to-end view of the organization's financial operations.\n\n<!-- notionvc: dc3dcf1a-2a64-481e-a476-1e1e563d234a -->"
+}

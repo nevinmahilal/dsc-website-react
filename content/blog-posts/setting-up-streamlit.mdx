@@ -1,0 +1,165 @@
+---
+title: "Setting up Streamlit"
+excerpt: "With datasets growing larger every year, a useful tool to process mountains of information quickly is Streamlit. In this post, we aim to guide you through the setup process for both Python and Streamlit ..."
+date: "2026-03-10T02:28:58.000Z"
+category: "Snowflake"
+featuredImage: "/images/blog-posts/0_ApB6qJTN9uFZ2FrT.jpg"
+seoTitle: "Setting Up Streamlit for Data Apps with Python"
+seoDescription: "With datasets growing larger every year, a useful tool to process mountains of information quickly is Streamlit. In this post, we aim to guide you through the setup process for both Python and Streamlit ..."
+---
+
+<!-- wp:paragraph -->
+<p>With datasets growing larger every year, a useful tool to process mountains of information quickly is Streamlit. In this post, we aim to guide you through the setup process for both Python and Streamlit, as well as walk you through the process of creating your first visual representations of data to showcase the processing power of Streamlit. This guide takes elements from the official documentation of &#x1f517; <a href="https://docs.streamlit.io/get-started/installation/command-line" target="_blank" rel="noopener">Install Streamlit using command line — Streamlit Docs</a> and <a href="https://code.visualstudio.com/docs/python/python-tutorial" target="_blank" rel="noopener">code.visualstudio.com</a>.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Setting up Python in Windows is fairly simple. Windows should already have a version of Python installed, meaning existing Python code can be run. However, to setup Python in an IDE such as Visual Studio Code, there are a few additional steps to take. Firstly, download and install the latest official release of Python from <a href="http://python.org" target="_blank" rel="noopener">python.org</a>. This will setup the libraries and localized files needed. The installation can be verified within a command prompt by running the command “py -3 — version” for Windows, or “python3 — version” for Linux and macOS. The command prompt will detect the installed Python files and return the current version of Python installed as seen in the image below.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image -->
+<figure class="wp-block-image"><img src="https://cdn-images-1.medium.com/max/800/1*jJjvHCxVl95gAztXiaRseQ.png" alt="" /></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph -->
+<p><br />After verifying the Python installation, the next step is to configure the environment in VS Code. Install VS Code for your operating system, then create an empty folder to use as the workspace. This can be done in the local file manager, or through the command prompt as shown in the image below. The command “cd” allows you to change your current file path, while “mkdir” creates a directory or folder. The final line “code .” launches VS Code in the current file path.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image -->
+<figure class="wp-block-image"><img src="https://cdn-images-1.medium.com/max/800/1*boTg8eAP7gKWAEYf8CH1RA.png" alt="" /></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph -->
+<p><br />To configure VS Code, start by showing all commands using the shortcut “Ctrl+Shift+P”. In the menu that opens, select the option “Python: Create Environment”. As the command list is fairly long, you can also type out the command to filter the options.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image -->
+<figure class="wp-block-image"><img src="https://cdn-images-1.medium.com/max/800/1*NUMCRGL7S_BJ37fYM6dXZQ.png" alt="" /></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph -->
+<p><br />Once selected, the command menu presents a choice of a Venv or Conda environment. Choose Venv.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image -->
+<figure class="wp-block-image"><img src="https://cdn-images-1.medium.com/max/800/1*EY-H1xhDopgnu9f6WmA6oA.png" alt="" /></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph -->
+<p><br />The recently installed Python version should be available to select in the next menu. After clicking on it, the environment should be configured by VS Code. The progress will be shown in a popup box, followed by another box showing the current environment.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image -->
+<figure class="wp-block-image"><img src="https://cdn-images-1.medium.com/max/800/1*RznJTxCpnUJIxzE2oNCF0g.png" alt="" /></figure>
+<!-- /wp:image -->
+
+<!-- wp:image -->
+<figure class="wp-block-image"><img src="https://cdn-images-1.medium.com/max/800/1*S1eEu2yIVf_Pr_lP26kEfg.png" alt="" /></figure>
+<!-- /wp:image -->
+
+<!-- wp:image -->
+<figure class="wp-block-image"><img src="https://cdn-images-1.medium.com/max/800/1*Q1HZRh4Fm_NPKHVKawMAcA.png" alt="" /></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph -->
+<p><br />Finally, to be certain that the current environment is the one displayed in the above box, or to switch environments as needed, use the command “Python: Select Interpreter” from the command list following the shortcut listed above.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":4} -->
+<h4 class="wp-block-heading">Setting up Streamlit</h4>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>To setup Streamlit within VS Code, open the command list with the same shortcut used above. Select “Python: Create Terminal”. In the bottom right corner of the screen, open the dropdown menu of the “+” symbol and select command prompt. This will create a command prompt terminal in the current file path within VS Code.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image -->
+<figure class="wp-block-image"><img src="https://cdn-images-1.medium.com/max/800/1*W9J1uhLm_oyTlu8h5iNE7A.png" alt="" /></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph -->
+<p><br />Within the new command prompt, run “.venv\Scripts\activate.bat” to initialize .venv commands. Finally, run “pip install streamlit” to download and configure streamlit within the current environment. The command prompt should display messages of the operations performed collecting various Streamlit files and installing them.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image -->
+<figure class="wp-block-image"><img src="https://cdn-images-1.medium.com/max/800/1*1lK_TsKH2YP9Efc9zwexNQ.png" alt="" /></figure>
+<!-- /wp:image -->
+
+<!-- wp:image -->
+<figure class="wp-block-image"><img src="https://cdn-images-1.medium.com/max/800/1*bA2WWEdCbZ8WT1NTKZ0lKQ.png" alt="" /></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph -->
+<p><br />Streamlit is now ready to be used! For this map visual, also run “pip install pandas”, “pip install geopandas”, and “pip install plotly.express”.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":4} -->
+<h4 class="wp-block-heading">First Map Visual</h4>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>To begin creating your first map visual, first create a python file. This can be done in the file viewer within VS Code. Click the new file icon and name the file “retail_map.py”.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image -->
+<figure class="wp-block-image"><img src="https://cdn-images-1.medium.com/max/800/1*j4sOargoqUVasTuXIqqhOA.png" alt="" /></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph -->
+<p><br />Within that file, first import the libraries to be used . Assign them a name to be called whenever a function is used as below.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:code -->
+<pre class="wp-block-code"><code>import streamlit as st<br />import pandas as pd<br />import plotly.express as px</code></pre>
+<!-- /wp:code -->
+
+<!-- wp:paragraph -->
+<p>For this visual, we will use a public sample dataset from our website (originally from Kaggle but edited to reflect this walkthrough). Follow the link here to download this dataset and follow along: <a href="https://www.dsc-website.local/post/setting-up-streamlit" target="_blank" rel="noopener">Superstore Sales.</a> Download the file and move the csv file to your environment folder location.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image -->
+<figure class="wp-block-image"><img src="https://cdn-images-1.medium.com/max/800/1*jT_zmdi_3mgml6MKYD6Dkg.png" alt="" /></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph -->
+<p><br />Now load the data from the csv file into a variable.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:code -->
+<pre class="wp-block-code"><code>#Load CSV data<br />df = pd.read_csv('superstore_final_dataset.csv', encoding='windows-1252')</code></pre>
+<!-- /wp:code -->
+
+<!-- wp:paragraph -->
+<p>Next we’ll create a filtering dropdown menu to filter data by years. Follow the code in the image below to implement it.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:code -->
+<pre class="wp-block-code"><code># Convert 'date' to datetime, change format and extract year for filtering<br />df['date'] = pd.to_datetime(df['Order_Date'], format="%d/%m/%Y")<br />df['year'] = df['date'].dt.year<br /><br /># Year selection<br />year_list = sorted(df['year'].unique())<br />selected_year = st.selectbox('Select a year', year_list)<br /><br /># Filter data for the selected year<br />df_filtered = df[df['year'] == selected_year]</code></pre>
+<!-- /wp:code -->
+
+<!-- wp:paragraph -->
+<p>Finally, we can create a visual map of the USA and the states reflecting sales data for the selected year using a choropleth map as a part of the <a href="http://plotly.express" target="_blank" rel="noopener">plotly.express</a> library. Follow the image below to implement this, having locations = the new abbreviated state column header.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:code -->
+<pre class="wp-block-code"><code># Streamlit UI<br />st.title('Retail Sales Over Time')<br />st.write(df_filtered)<br /><br />#Create USA map<br />figure1 = px.choropleth(df_filtered,<br />                      locations=" State_Abb",<br />                      locationmode="USA-states",<br />                      color="Sales",<br />                      color_continuous_scale="YlOrRd",<br />                      range_color=(0, 1700),<br />                      scope = "usa",<br />                      hover_name="State"<br />                    )<br /><br />st.plotly_chart(figure1)</code></pre>
+<!-- /wp:code -->
+
+<!-- wp:paragraph -->
+<p>To generate the final page, click run, then type the command generated for streamlit in the command window. It will be similar to “streamlit run ~/retail_map.py”, where ~ is your personal PC environment path. The resulting page should appear as below.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image -->
+<figure class="wp-block-image"><img src="https://cdn-images-1.medium.com/max/800/1*wHWBvs2QLuRTtIMY4g00tA.png" alt="" /></figure>
+<!-- /wp:image -->
+
+<!-- wp:heading {"level":4} -->
+<h4 class="wp-block-heading">Conclusion</h4>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>As shown through the process above, with the correctly formatted data, Streamlit can take csv files and turn them into vibrant visual maps to quickly see large amounts of important data in a concise view. It can also filter and transform data flexibly. Instead of filtering by year, we could have easily filtered by state and had a graph of sales by state across multiple years. Streamlit remains a power tool to quickly organize and transform large datasets into easily digested pieces of information.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>&nbsp;</p>
+<!-- /wp:paragraph -->

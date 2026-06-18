@@ -1,0 +1,142 @@
+{
+  "slug": "work",
+  "title": "Work",
+  "sections": [
+    {
+      "type": "heading",
+      "text": "Our Data Analytics and Consulting Services",
+      "tag": "h1"
+    },
+    {
+      "type": "heading",
+      "text": "What We Do",
+      "tag": "h2"
+    },
+    {
+      "type": "richText",
+      "html": "We design, build, and operate modern data platforms that support decision making at scale. Our work focuses on reliability, cost efficiency, and trust in the data. Each engagement maps to one or more of the core services below."
+    },
+    {
+      "type": "heading",
+      "text": "Data Architecture",
+      "tag": "h2"
+    },
+    {
+      "type": "richText",
+      "html": "<p>We design data architectures that scale with the business and support long term analytics and operational use cases.</p><p><br />This includes warehouse and lakehouse design, analytics modeling, access control strategies, and governance frameworks. We emphasize clear ownership, consistent definitions, and structures that reduce downstream rework as teams and data volume grow.</p>"
+    },
+    {
+      "type": "heading",
+      "text": "Data Engineering",
+      "tag": "h2"
+    },
+    {
+      "type": "richText",
+      "html": "<p>We build production grade data pipelines that are reliable, observable, and easy to extend.</p><p><br />Our work covers ingestion, transformation, orchestration, and testing. Pipelines are designed for analytics readiness, with strong data quality checks and clear lineage so teams can trust outputs and diagnose issues quickly.</p>"
+    },
+    {
+      "type": "heading",
+      "text": "Data and Cloud Migrations",
+      "tag": "h2"
+    },
+    {
+      "type": "richText",
+      "html": "<p>We lead low risk migrations from legacy or managed platforms to modern cloud data stacks.</p><p> </p><p>We plan and execute migrations with parallel validation, minimal downtime, and coordination across analytics and operational teams. The result is lower cost, greater flexibility, and a platform that supports future growth.</p>"
+    },
+    {
+      "type": "heading",
+      "text": "Business Intelligence",
+      "tag": "h2"
+    },
+    {
+      "type": "richText",
+      "html": "<p>We deliver executive ready dashboards built on trusted data models.</p><p><br />We focus on metric alignment, semantic layer design, and performance at scale. Dashboards are built for self service, enabling leaders and operators to answer questions without manual reporting or spreadsheet work.</p>"
+    },
+    {
+      "type": "heading",
+      "text": "AI and Machine Learning",
+      "tag": "h2"
+    },
+    {
+      "type": "richText",
+      "html": "<p>We deploy machine learning systems that integrate directly into data platforms and business workflows.<br /><br /></p><p>Use cases include forecasting, classification, and optimization. Models are transparent, auditable, and operationalized with monitoring and retraining strategies to ensure long term value.</p>"
+    },
+    {
+      "type": "heading",
+      "text": "Software Engineering ",
+      "tag": "h2"
+    },
+    {
+      "type": "richText",
+      "html": "<p>Designing and building custom data-driven applications that capture, unify, and operationalize business-critical data so teams can run operations, make decisions, and manage systems with confidence.</p><p><br />We focus on applications where data is central to the workflow, including operational data capture systems, customer-facing decision tools for sales and marketing teams, and internal platforms that provide visibility and control over data infrastructure. Every solution is built with scalability, security, and integration into your broader data ecosystem in mind, ensuring your software not only works but continuously drives value as your business grows.</p>"
+    },
+    {
+      "type": "heading",
+      "text": "Data Architecture",
+      "tag": "h2"
+    },
+    {
+      "type": "richText",
+      "html": "<p>We design data architectures that scale with the business and support long term analytics and operational use cases.</p><p><br />This includes warehouse and lakehouse design, analytics modeling, access control strategies, and governance frameworks. We emphasize clear ownership, consistent definitions, and structures that reduce downstream rework as teams and data volume grow.</p>"
+    },
+    {
+      "type": "heading",
+      "text": "Data Engineering\n",
+      "tag": "h2"
+    },
+    {
+      "type": "richText",
+      "html": "<p>We build production grade data pipelines that are reliable, observable, and easy to extend.</p><p><br />Our work covers ingestion, transformation, orchestration, and testing. Pipelines are designed for analytics readiness, with strong data quality checks and clear lineage so teams can trust outputs and diagnose issues quickly.</p>"
+    },
+    {
+      "type": "heading",
+      "text": "Data and Cloud Migrations\n",
+      "tag": "h2"
+    },
+    {
+      "type": "richText",
+      "html": "<p>We lead low risk migrations from legacy or managed platforms to modern cloud data stacks.</p><p><br />We plan and execute migrations with parallel validation, minimal downtime, and coordination across analytics and operational teams. The result is lower cost, greater flexibility, and a platform that supports future growth.</p>"
+    },
+    {
+      "type": "heading",
+      "text": "Business \nIntelligence",
+      "tag": "h2"
+    },
+    {
+      "type": "richText",
+      "html": "<p>We deliver executive ready dashboards built on trusted data models.</p><p><br />We focus on metric alignment, semantic layer design, and performance at scale. Dashboards are built for self service, enabling leaders and operators to answer questions without manual reporting or spreadsheet work.</p>"
+    },
+    {
+      "type": "heading",
+      "text": "AI and Machine Learning\n",
+      "tag": "h2"
+    },
+    {
+      "type": "richText",
+      "html": "<p>We deploy machine learning systems that integrate directly into data platforms and business workflows.</p><p><br />Use cases include forecasting, classification, and optimization. Models are transparent, auditable, and operationalized with monitoring and retraining strategies to ensure long term value.</p>"
+    },
+    {
+      "type": "heading",
+      "text": "Software Engineering",
+      "tag": "h2"
+    },
+    {
+      "type": "richText",
+      "html": "<p>Designing and building custom data-driven applications that capture, unify, and operationalize business-critical data so teams can run operations, make decisions, and manage systems with confidence.</p><p> </p><p>We focus on applications where data is central to the workflow, including operational data capture systems, customer-facing decision tools for sales and marketing teams, and internal platforms that provide visibility and control over data infrastructure. Every solution is built with scalability, security, and integration into your broader data ecosystem in mind, ensuring your software not only works but continuously drives value as your business grows.</p>"
+    },
+    {
+      "type": "heading",
+      "text": "Case Studies",
+      "tag": "h2"
+    },
+    {
+      "type": "heading",
+      "text": "Dashboards",
+      "tag": "h2"
+    }
+  ],
+  "seo": {
+    "title": "Data Analytics & Strategy Consulting Services | DSC",
+    "description": "Architecture, data engineering, BI, and AI services by DSC for growth-stage companies. Built for scale and consistent delivery. Get in touch."
+  }
+}

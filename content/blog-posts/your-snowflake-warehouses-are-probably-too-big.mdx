@@ -1,0 +1,125 @@
+---
+title: "Your Snowflake Warehouses Are Probably Too Big"
+excerpt: "Nobody sets out to waste money on Snowflake. It happens quietly. During setup, someone picks Medium because it seems reasonable."
+date: "2026-03-10T02:28:58.000Z"
+category: "Data Engineering"
+featuredImage: "/images/blog-posts/Omdia-Global-cloud-infrastructure-spending-hits-1026-billion-up-25-in-Q3-2025-GettyImages1640472767.webp"
+seoTitle: "Your Snowflake Warehouses Are Probably Too Big"
+seoDescription: "Nobody sets out to waste money on Snowflake. It happens quietly. During setup, someone picks Medium because it seems reasonable."
+---
+
+<!-- wp:paragraph -->
+<p>Nobody sets out to waste money on Snowflake. It happens quietly.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>During setup, someone picks Medium because it seems reasonable. Or Large, because a dashboard was slow that one time. The warehouse works. Queries finish. Nobody touches it again.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Six months later, you’re burning double the credits you need to. Not because anything broke. Because nobody went back to check.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>We see this in almost every Snowflake environment we touch at DSC. Warehouse oversizing is the single most common source of avoidable spend, and it hides in plain sight.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">How it&nbsp;happens</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>When a team spins up a new warehouse, the priority is getting things working. Fair enough. But “working” and “right-sized” are two very different things.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Here’s the pattern we see repeatedly:</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>A warehouse gets created at Medium or Large during implementation. Dashboards load. Pipelines run. Everyone moves on to the next problem. The warehouse stays at that size forever.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Nobody downsizes because nobody wants to be the person who broke the BI layer. And without data on actual utilization, it feels like a gamble. So the default sticks.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>The problem is that Snowflake pricing scales linearly with warehouse size. Medium to Large doubles your credit burn. Small to Large quadruples it. If the workload doesn’t need that compute, the difference is pure waste.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">What it looks like in&nbsp;practice</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>This isn’t dramatic. It’s boring. That’s why it persists.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Queries finishing in 2 seconds on a Large that would finish in 3 seconds on a Small. A BI refresh running hourly on Medium with one concurrent user. A transformation job that spikes for 30 seconds but holds a Large warehouse active for 10 minutes because auto-suspend is set to the default 5 minutes.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>None of these trigger alerts. All of them cost you money every single day.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Take one warehouse running 8 hours a day, 5 days a week, sized one step too large. That’s roughly 160 hours per month of excess compute. At Snowflake’s standard pricing, you’re looking at hundreds to thousands of dollars in waste from a single warehouse. Most environments have 5 to 15 of them.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">Why nobody catches&nbsp;it</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>It’s not a visibility problem. Snowflake gives you the data. It’s an ownership problem.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Engineering manages the pipelines. Analytics owns the dashboards. Finance sees the invoice. Nobody owns warehouse efficiency. There’s no recurring review. No baseline for what “right-sized” means for a given workload.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>And when spend comes up in a planning conversation, the response is usually to look at query optimization or storage cleanup. The warehouse sizes themselves rarely get questioned because they’ve always been that way.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">The fix is simpler than you&nbsp;think</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>You don’t need to rearchitect anything. You need three things:</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><strong>Utilization data per warehouse.</strong> Look at AVG_RUNNING and AVG_QUEUED_LOAD from WAREHOUSE_LOAD_HISTORY. If average running queries are consistently below 1.0 over 30 days, the warehouse is oversized.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><strong>A benchmark test.</strong> Pick your top 3 warehouses by spend. Drop each one size. Monitor for a week. If queries still finish within acceptable thresholds and nothing queues, keep the smaller size.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><strong>An auto-suspend check.</strong> The default is 5 minutes. For most ad-hoc and BI warehouses, 60 seconds is fine. That alone can cut idle credit burn by 20–30%.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>This isn’t a one-time exercise. Workloads change. Dashboards stabilize. Models get more efficient. What was the right size 6 months ago probably isn’t today.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading {"level":3} -->
+<h3 class="wp-block-heading">What we built for&nbsp;this</h3>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>DSC Optimizer connects to your Snowflake account and surfaces exactly this: which warehouses are oversized, what they should be, and how much you’d save by changing them. No percentage-of-spend pricing. A flat $199/month.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>If you’re spending $50K+ a year on Snowflake and haven’t reviewed your warehouse sizes recently, it’s worth a look.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p><a href="https://dsc-website.local/dsc-optimizer/" target="_blank">Check out DSC Optimizer →</a></p>
+<!-- /wp:paragraph -->

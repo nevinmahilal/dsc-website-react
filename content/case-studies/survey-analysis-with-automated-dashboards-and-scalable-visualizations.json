@@ -1,0 +1,25 @@
+{
+  "slug": "survey-analysis-with-automated-dashboards-and-scalable-visualizations",
+  "title": "Survey Analysis with Automated Dashboards and Scalable Visualizations",
+  "excerpt": "Automated complex survey analytics by centralizing MySQL and PostgreSQL data in Snowflake, modeling with dbt, and delivering scalable, interactive Tableau dashboards with advanced statistical workflows.",
+  "body": "<!-- wp:paragraph -->\n<p>Automated complex survey analytics by centralizing MySQL and PostgreSQL data in Snowflake, modeling with dbt, and delivering scalable, interactive Tableau dashboards with advanced statistical workflows.</p>\n<!-- /wp:paragraph -->",
+  "serviceTags": [
+    "Advanced Analytics",
+    "BI & Dashboard Development",
+    "Data Engineering",
+    "Data Warehousing"
+  ],
+  "industry": "Industry 3",
+  "techStack": [
+    "Airbyte",
+    "dbt",
+    "Snowflake",
+    "Tableau"
+  ],
+  "seo": {
+    "title": "Automated Survey Analysis and Data Visualization",
+    "description": "Survey analysis, automated dashboards, and scalable visualizations improved reporting efficiency and insights with Data Solutions Consulting. Learn more."
+  },
+  "challenge": "A firm specializing in organizational culture diagnostics relied on Excel to manage complex statistical survey analysis across multiple companies and assessment types. Manual calculations created risk of human error and inconsistent outputs.\n\n&nbsp;\n\nCombining results from two, three, or more organizations was time consuming and difficult to scale. Traditional Excel reporting lacked dynamic filtering, real time updates, and the ability to visualize trends over time.\n\n&nbsp;\n\nAs survey volume and client diversity increased, the organization required a scalable, automated analytics solution capable of supporting advanced statistical workflows and cross segment insights.",
+  "whatWeDid": "We designed and implemented a modern analytics stack using Airbyte, Snowflake, dbt, and Tableau.\n\nSurvey data from MySQL and PostgreSQL was centralized in Snowflake. Initially, ingestion relied on Snowflake’s native PostgreSQL connector, but due to high operational costs, ingestion was migrated to Airbyte hosted on a Google Cloud VM. The VM was upgraded to support Airbyte’s resource requirements, ensuring stable and scalable ingestion.\n\nUsing dbt, we implemented a modular modeling strategy with layered datasets:\n<ul>\n \t<li>All Assessments model integrating client, project, assessment, and response level data</li>\n \t<li>Aggregated assessment summaries</li>\n \t<li>Filtered specific assessment datasets</li>\n \t<li>Summary layers optimized for dashboard consumption</li>\n</ul>\nInner joins ensured high data integrity by returning only valid, fully mapped records.\n\nA Snowflake view supported advanced distance and benchmark calculations without triggering full dbt builds, enabling rapid iteration.\n\nIn Tableau, we established live connections to Snowflake, implemented advanced statistical calculations including weighted averages, z scores, variance, standard deviation, and correlation coefficients. TabPy integration enabled Python based statistical functions such as t distribution and Pearson correlation directly within dashboards.\n\nAnimated visualizations, multi level filters, and parameter driven comparisons provided dynamic cross client insights.<!-- notionvc: dc3dcf1a-2a64-481e-a476-1e1e563d234a -->"
+}

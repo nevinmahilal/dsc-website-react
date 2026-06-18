@@ -1,0 +1,24 @@
+{
+  "slug": "try-dsc-optimizer",
+  "title": "Try DSC Optimizer",
+  "sections": [
+    {
+      "type": "heading",
+      "text": "Take Control of Your Snowflake Costs",
+      "tag": "h1"
+    },
+    {
+      "type": "richText",
+      "html": "<p>Understand what is driving your spend, identify inefficiencies, and prioritize the right fixes.</p><p> </p><p>See how DSC Optimizer delivers clear, actionable cost insights. If you’re interested in using DSC Optimizer or want to understand whether it’s a good fit for your environment, you can get started below or reach out with questions.</p>"
+    },
+    {
+      "type": "heading",
+      "text": "Request Access to DSC Optimizer",
+      "tag": "h2"
+    }
+  ],
+  "seo": {
+    "title": "Try DSC Optimizer for Snowflake Cost Insights",
+    "description": "Cut Snowflake costs with DSC Optimizer by Data Solutions Consulting. Find spend drivers, fix inefficiencies, and improve performance. Request access today."
+  }
+}

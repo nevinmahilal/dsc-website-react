@@ -1,0 +1,458 @@
+{
+  "slug": "dsc-optimizer",
+  "title": "DSC Optimizer",
+  "sections": [
+    {
+      "type": "heading",
+      "text": "Understand and control your data platform costs.",
+      "tag": "h1"
+    },
+    {
+      "type": "heading",
+      "text": "DSC Optimizer helps teams monitor, analyze, and optimize Snowflake usage so cloud spend stays predictable as data usage grows.",
+      "tag": "h2"
+    },
+    {
+      "type": "cta",
+      "label": "Try DSC Optimizer",
+      "href": "/try-dsc-optimizer/"
+    },
+    {
+      "type": "image",
+      "src": "/images/pages/Warehouse.webp",
+      "alt": "Warehouse"
+    },
+    {
+      "type": "image",
+      "src": "/images/pages/recommendations-.webp",
+      "alt": "recommendations"
+    },
+    {
+      "type": "image",
+      "src": "/images/pages/Analytics.webp",
+      "alt": "Analytics"
+    },
+    {
+      "type": "image",
+      "src": "/images/pages/Sync-Status-.webp",
+      "alt": "Data Sync Status Dashboard"
+    },
+    {
+      "type": "heading",
+      "text": "What DSC Optimizer Does",
+      "tag": "h2"
+    },
+    {
+      "type": "richText",
+      "html": "<p>As data platforms scale, cloud costs become harder to understand and easier to mismanage. Usage patterns shift, workloads evolve, and small inefficiencies quietly turn into material spend.<br /><br />DSC Optimizer ingests metadata from Snowflake and turns it into clear, actionable insight.  </p>"
+    },
+    {
+      "type": "richText",
+      "html": "<p>It provides visibility into how your data platform is being used today, highlights inefficiencies, and recommends changes that help teams control costs without disrupting analytics or operations.</p><p> </p><p>This is not a billing export or a static cost report. It is a practical tool built to support ongoing cost awareness and optimization.</p>"
+    },
+    {
+      "type": "richText",
+      "html": "<p>It provides visibility into how your data platform is being used today, highlights inefficiencies, and recommends changes that help teams control costs without disrupting analytics or operations.</p>"
+    },
+    {
+      "type": "richText",
+      "html": "<p>This is not a billing export or a static cost report. It is a practical tool built to support ongoing cost awareness and optimization.</p>"
+    },
+    {
+      "type": "heading",
+      "text": "Core Capabilities",
+      "tag": "h2"
+    },
+    {
+      "type": "image",
+      "src": "/images/pages/cost-hq.png",
+      "alt": ""
+    },
+    {
+      "type": "heading",
+      "text": "Cost \nVisibility",
+      "tag": "h2"
+    },
+    {
+      "type": "richText",
+      "html": "<p>Interactive charts and dashboards show how Snowflake usage evolves over time, broken down by key drivers such as warehouses, queries, and workloads.</p>"
+    },
+    {
+      "type": "image",
+      "src": "/images/pages/usage-hq.png",
+      "alt": ""
+    },
+    {
+      "type": "heading",
+      "text": "Usage \nAnalysis",
+      "tag": "h2"
+    },
+    {
+      "type": "richText",
+      "html": "Identify which queries, processes, and patterns are driving spend, including inefficient or underutilized resources."
+    },
+    {
+      "type": "image",
+      "src": "/images/pages/optimization-hq.png",
+      "alt": ""
+    },
+    {
+      "type": "heading",
+      "text": "Optimization Recommendations",
+      "tag": "h2"
+    },
+    {
+      "type": "richText",
+      "html": "Actionable recommendations highlight opportunities to reduce costs safely, such as resizing compute, adjusting scheduling, or cleaning up unused workloads."
+    },
+    {
+      "type": "image",
+      "src": "/images/pages/designated-hq-2.png",
+      "alt": ""
+    },
+    {
+      "type": "heading",
+      "text": "Designed for Operators",
+      "tag": "h2"
+    },
+    {
+      "type": "richText",
+      "html": "Built for teams responsible for running data platforms, not just finance. Recommendations are practical, transparent, and grounded in how Snowflake actually works."
+    },
+    {
+      "type": "image",
+      "src": "/images/pages/cost-hq.png",
+      "alt": ""
+    },
+    {
+      "type": "heading",
+      "text": "Cost \nVisibility",
+      "tag": "h2"
+    },
+    {
+      "type": "richText",
+      "html": "<p>Interactive charts and dashboards show how Snowflake usage evolves over time, broken down by key drivers such as warehouses, queries, and workloads.</p>"
+    },
+    {
+      "type": "image",
+      "src": "/images/pages/usage-hq.png",
+      "alt": ""
+    },
+    {
+      "type": "heading",
+      "text": "Usage \nAnalysis",
+      "tag": "h2"
+    },
+    {
+      "type": "richText",
+      "html": "<p>Identify which queries, processes, and patterns are driving spend, including inefficient or underutilized resources.</p>"
+    },
+    {
+      "type": "image",
+      "src": "/images/pages/optimization-hq.png",
+      "alt": ""
+    },
+    {
+      "type": "heading",
+      "text": "Optimization Recommendations",
+      "tag": "h2"
+    },
+    {
+      "type": "richText",
+      "html": "<p>Actionable recommendations highlight opportunities to reduce costs safely, such as resizing compute, adjusting scheduling, or cleaning up unused workloads.</p>"
+    },
+    {
+      "type": "image",
+      "src": "/images/pages/designated-hq-2.png",
+      "alt": ""
+    },
+    {
+      "type": "heading",
+      "text": "Designed for Operators",
+      "tag": "h2"
+    },
+    {
+      "type": "richText",
+      "html": "<p>Built for teams responsible for running data platforms, not just finance. Recommendations are practical, transparent, and grounded in how Snowflake actually works.</p>"
+    },
+    {
+      "type": "heading",
+      "text": "Why We Built It",
+      "tag": "h2"
+    },
+    {
+      "type": "richText",
+      "html": "<p>We built DSC Optimizer to solve a problem we see repeatedly in client environments.</p><p> </p><p>Cloud data platforms make it easy to scale analytics, but much harder to maintain cost discipline over time. Teams often lack a clear view of how usage decisions translate into spend, especially as more users, tools, and workloads come online </p>"
+    },
+    {
+      "type": "richText",
+      "html": "<p>Teams often lack a clear view of how usage decisions translate into spend, especially as more users, tools, and workloads come online. </p><p> </p><p>DSC Optimizer reflects how we approach cost optimization in our consulting work: understand usage first, make informed changes second, and avoid cost cutting that breaks trust in data.</p>"
+    },
+    {
+      "type": "richText",
+      "html": "<p>Teams often lack a clear view of how usage decisions translate into spend, especially as more users, tools, and workloads come online. </p><p> </p><p> DSC Optimizer reflects how we approach cost optimization in our consulting work: understand usage first, make informed changes second, and avoid cost cutting that breaks trust in data.</p>"
+    },
+    {
+      "type": "heading",
+      "text": "Predictable Pricing",
+      "tag": "h2"
+    },
+    {
+      "type": "heading",
+      "text": "DSC Optimizer uses a simple flat rate pricing model designed for fast adoption, easy approvals, and long term trust.",
+      "tag": "h2"
+    },
+    {
+      "type": "heading",
+      "text": "Monthly Price:",
+      "tag": "h2"
+    },
+    {
+      "type": "heading",
+      "text": "<span>$199 USD</span> / month",
+      "tag": "h2"
+    },
+    {
+      "type": "heading",
+      "text": "Annual Commitment (Discounted):",
+      "tag": "h2"
+    },
+    {
+      "type": "heading",
+      "text": "<span>$165 USD</span> / month <span>(billed annually)</span>",
+      "tag": "h2"
+    },
+    {
+      "type": "heading",
+      "text": "What’s Included",
+      "tag": "h2"
+    },
+    {
+      "type": "heading",
+      "text": "What’s Coming Next",
+      "tag": "h2"
+    },
+    {
+      "type": "heading",
+      "text": "DSC Optimizer is designed to grow alongside modern data stacks.",
+      "tag": "h2"
+    },
+    {
+      "type": "heading",
+      "text": "Planned capabilities include:\n ",
+      "tag": "h2"
+    },
+    {
+      "type": "image",
+      "src": "/images/pages/broaderhq.png",
+      "alt": ""
+    },
+    {
+      "type": "heading",
+      "text": "Broader cloud and platform support beyond Snowflake  ",
+      "tag": "h2"
+    },
+    {
+      "type": "image",
+      "src": "/images/pages/end-hq.png",
+      "alt": ""
+    },
+    {
+      "type": "heading",
+      "text": "End to end lineage visibility linking data models, dashboards, and cost drivers",
+      "tag": "h2"
+    },
+    {
+      "type": "image",
+      "src": "/images/pages/integration-hq.png",
+      "alt": ""
+    },
+    {
+      "type": "heading",
+      "text": "Integration with transformation and BI tools such as dbt and Looker",
+      "tag": "h2"
+    },
+    {
+      "type": "image",
+      "src": "/images/pages/monitoring-hq.png",
+      "alt": ""
+    },
+    {
+      "type": "heading",
+      "text": "Monitoring and analysis of AI and LLM related data costs",
+      "tag": "h2"
+    },
+    {
+      "type": "image",
+      "src": "/images/pages/broaderhq.png",
+      "alt": ""
+    },
+    {
+      "type": "heading",
+      "text": "Broader cloud and platform support beyond Snowflake  ",
+      "tag": "h2"
+    },
+    {
+      "type": "image",
+      "src": "/images/pages/end-hq.png",
+      "alt": ""
+    },
+    {
+      "type": "heading",
+      "text": "End to end lineage visibility linking data models, dashboards, and cost drivers",
+      "tag": "h2"
+    },
+    {
+      "type": "image",
+      "src": "/images/pages/integration-hq.png",
+      "alt": ""
+    },
+    {
+      "type": "heading",
+      "text": "Integration with transformation and BI tools such as dbt and Looker",
+      "tag": "h2"
+    },
+    {
+      "type": "image",
+      "src": "/images/pages/monitoring-hq.png",
+      "alt": ""
+    },
+    {
+      "type": "heading",
+      "text": "Monitoring and analysis of AI and LLM related data costs",
+      "tag": "h2"
+    },
+    {
+      "type": "heading",
+      "text": "The goal is a unified view of how data, analytics, and AI usage translate into real infrastructure spend",
+      "tag": "h2"
+    },
+    {
+      "type": "heading",
+      "text": "Who It’s For",
+      "tag": "h2"
+    },
+    {
+      "type": "heading",
+      "text": "DSC Optimizer is built for:",
+      "tag": "h2"
+    },
+    {
+      "type": "image",
+      "src": "/images/pages/Group-193.png",
+      "alt": ""
+    },
+    {
+      "type": "heading",
+      "text": "Data and analytics teams responsible for operating Snowflake",
+      "tag": "h2"
+    },
+    {
+      "type": "image",
+      "src": "/images/pages/Group-194.png",
+      "alt": ""
+    },
+    {
+      "type": "heading",
+      "text": "Engineering leaders managing cloud cost growth",
+      "tag": "h2"
+    },
+    {
+      "type": "image",
+      "src": "/images/pages/Group-195.png",
+      "alt": ""
+    },
+    {
+      "type": "heading",
+      "text": "Organizations scaling analytics and preparing for AI workloads",
+      "tag": "h2"
+    },
+    {
+      "type": "image",
+      "src": "/images/pages/Group-196.png",
+      "alt": ""
+    },
+    {
+      "type": "heading",
+      "text": "Teams that want proactive cost control rather than reactive billing reviews",
+      "tag": "h2"
+    },
+    {
+      "type": "image",
+      "src": "/images/pages/Group-193.png",
+      "alt": ""
+    },
+    {
+      "type": "heading",
+      "text": "Data and analytics teams responsible for operating Snowflake",
+      "tag": "h2"
+    },
+    {
+      "type": "image",
+      "src": "/images/pages/Group-194.png",
+      "alt": ""
+    },
+    {
+      "type": "heading",
+      "text": "Engineering leaders managing cloud cost growth",
+      "tag": "h2"
+    },
+    {
+      "type": "image",
+      "src": "/images/pages/Group-195.png",
+      "alt": ""
+    },
+    {
+      "type": "heading",
+      "text": "Organizations scaling analytics and preparing for AI workloads",
+      "tag": "h2"
+    },
+    {
+      "type": "image",
+      "src": "/images/pages/Group-196.png",
+      "alt": "Proactive Cost Control Icon"
+    },
+    {
+      "type": "heading",
+      "text": "Teams that want proactive cost control rather than reactive billing reviews",
+      "tag": "h2"
+    },
+    {
+      "type": "heading",
+      "text": "Getting Started",
+      "tag": "h2"
+    },
+    {
+      "type": "heading",
+      "text": "DSC Optimizer is available as a subscription product.",
+      "tag": "h2"
+    },
+    {
+      "type": "richText",
+      "html": "<p>If you’re interested in using DSC Optimizer or want to understand whether it’s a good fit for your environment, you can get started below or reach out with questions.</p>"
+    },
+    {
+      "type": "cta",
+      "label": "Try DSC Optimizer",
+      "href": "/try-dsc-optimizer/"
+    },
+    {
+      "type": "image",
+      "src": "/images/pages/cloud.png",
+      "alt": ""
+    },
+    {
+      "type": "heading",
+      "text": "Cloud cost optimization for data platforms.",
+      "tag": "h2"
+    },
+    {
+      "type": "richText",
+      "html": "<p>Monitors usage, highlights inefficiencies, and recommends changes to reduce spend.</p>"
+    }
+  ],
+  "seo": {
+    "title": "Data Analysis & Cloud Cost Optimization Tool​ | DSC",
+    "description": "Monitor and optimize your Snowflake costs with Data Solutions Consulting Optimizer. Control cloud spend, reduce waste, and scale confidently. Get in touch."
+  }
+}

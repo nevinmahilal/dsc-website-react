@@ -1,0 +1,16 @@
+{
+  "slug": "modernizing-data-ingestion-and-reducing-integration-costs-3",
+  "title": "Scalable Survey Analytics with Interactive Dashboards",
+  "excerpt": "A research-focused organization analyzed complex survey data in Excel, leading to manual errors, slow analysis, and limited ability to compare results across clients and time periods.",
+  "body": "",
+  "serviceTags": [],
+  "industry": "",
+  "techStack": [],
+  "seo": {
+    "title": "Scalable Survey Analytics with Interactive Dashboards",
+    "description": "A research-focused organization analyzed complex survey data in Excel, leading to manual errors, slow analysis, and limited ability to compare results across clients and time periods."
+  },
+  "challenge": "A research-focused organization analyzed complex survey data in Excel, leading to manual errors, slow analysis, and limited ability to compare results across clients and time periods.",
+  "whatWeDid": "Centralized survey data, automated statistical calculations, and built interactive dashboards with dynamic filtering and time-based visualizations.",
+  "outcome": "Faster analysis, improved accuracy, and scalable insights across multiple datasets without reliance on spreadsheets."
+}

@@ -1,0 +1,19 @@
+{
+  "siteUrl": "https://datasolutionsinc.ca",
+  "name": "Data Solutions Inc.",
+  "defaultSeo": {
+    "title": "Data Analytics, Integration & Intelligence Solutions | DSC",
+    "description": "Data Solutions Consulting builds reliable data platforms for Canadian businesses with consulting, engineering, and analytics solutions. Get in touch today.",
+    "ogImage": "/images/og-default.jpg"
+  },
+  "footer": {
+    "copyright": "© 2025 Data Solutions Inc. All rights reserved.",
+    "social": [
+      { "platform": "facebook", "href": "https://www.facebook.com/datasolutionsinc" },
+      { "platform": "instagram", "href": "https://www.instagram.com/datasolutionsinc/" },
+      { "platform": "linkedin", "href": "https://linkedin.com/company/data-solutions-consulting-inc" },
+      { "platform": "tiktok", "href": "https://www.tiktok.com/@datasolutionsinc" }
+    ],
+    "contactEmail": "info@datasolutionsinc.ca"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "slug": "migration-from-fivetran-to-airbyte-for-ga4-and-magento",
+  "title": "Migration from Fivetran to Airbyte for GA4 and Magento",
+  "excerpt": "Migrated GA4 and Magento ingestion workflows from Fivetran to self hosted Airbyte to reduce integration costs and improve control, flexibility, and customization of pipelines.",
+  "body": "<!-- wp:paragraph -->\n<p>Migrated GA4 and Magento ingestion workflows from Fivetran to self hosted Airbyte to reduce integration costs and improve control, flexibility, and customization of pipelines.</p>\n<!-- /wp:paragraph -->",
+  "serviceTags": [
+    "Data and Cloud Migrations",
+    "Data Engineering",
+    "Open Source Ingestion"
+  ],
+  "industry": "Industry 2",
+  "techStack": [
+    "Airbyte",
+    "dbt",
+    "Fivetran",
+    "Google Analytics",
+    "Magento",
+    "Snowflake"
+  ],
+  "seo": {
+    "title": "Migration from Fivetran to Airbyte for GA4 and Magento",
+    "description": "Data Solutions Consulting helped shift GA4 and Magento workflows from Fivetran to Airbyte with no downtime and lower integration costs. Learn more."
+  },
+  "challenge": "An eCommerce platform relied on Fivetran to integrate data from Google Analytics 4 and Magento into their warehouse. As data volume increased, Fivetran’s monthly active row pricing became unsustainable. The client also faced limitations in connector customization, scheduling control, and transformation flexibility.\n\n&nbsp;\n\nThey needed a scalable ingestion solution that would support both current operations and future growth while reducing ongoing integration costs.",
+  "whatWeDid": "We proposed migrating ingestion workflows from Fivetran to Airbyte’s self hosted open source platform.\n\nWe began with a full assessment of the client’s existing pipelines, including GA4 and Magento data flow frequency and transfer volume. Airbyte was then installed and configured within the client’s environment to ensure infrastructure compatibility.\n\nNew ingestion pipelines were established from GA4 and MySQL (Magento) directly into Snowflake. To ensure a clean transition, we created a dedicated Snowflake schema for Airbyte ingested data and recreated all existing transformation logic in dbt.\n\nExtensive validation was performed by comparing Airbyte outputs against Fivetran processed data. Once parity was confirmed, all reporting models were fully transitioned to Airbyte."
+}

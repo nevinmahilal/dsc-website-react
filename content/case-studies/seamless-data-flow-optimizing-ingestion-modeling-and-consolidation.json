@@ -1,0 +1,25 @@
+{
+  "slug": "seamless-data-flow-optimizing-ingestion-modeling-and-consolidation",
+  "title": "Seamless Data Flow: Optimizing Ingestion, Modeling, and Consolidation",
+  "excerpt": "Unified multi platform marketing and lead generation data into Snowflake using Airbyte and dbt, delivering scalable Tableau dashboards for executive, affiliate, and operations teams.",
+  "body": "<!-- wp:paragraph -->\n<p>Unified multi platform marketing and lead generation data into Snowflake using Airbyte and dbt, delivering scalable Tableau dashboards for executive, affiliate, and operations teams.</p>\n<!-- /wp:paragraph -->",
+  "serviceTags": [
+    "BI & Dashboard Development",
+    "Data Engineering",
+    "Data Warehousing",
+    "Marketing Analytics"
+  ],
+  "industry": "Industry 3",
+  "techStack": [
+    "Airbyte",
+    "dbt",
+    "Snowflake",
+    "Tableau"
+  ],
+  "seo": {
+    "title": "Optimizing Data Ingestion, Modeling, and Consolidation",
+    "description": "Understand how Data Solutions Consulting optimized data pipelines, modeling, and consolidation to support better business reporting. Read more."
+  },
+  "challenge": "Google Ads, Facebook Ads, TikTok, Leadspedia, Lead Docket, and Everflow. Each source had distinct data structures and ingestion constraints.\n\n&nbsp;\n\nAPI limitations restricted historical extraction and call volumes, making complete data retrieval inefficient. Additionally, unifying datasets was difficult due to missing primary and foreign keys, inconsistent formats, and incomplete mappings across platforms.\n\n&nbsp;\n\nWithout a consolidated and standardized data foundation, reporting lacked reliability, scalability, and cross channel visibility.",
+  "whatWeDid": "We implemented a robust, end to end marketing analytics stack using Airbyte, Snowflake, dbt, and Tableau.\n\nAirbyte was used to ingest data from common platforms such as TikTok and Facebook Ads using built in connectors. For less common systems including Leadspedia and Everflow, we developed custom connectors to enable reliable extraction.\n\nTo overcome Leadspedia API constraints, we collaborated with the client to export historical data directly from the platform and ingest it via CSV uploads. Daily API ingestion was configured to ensure ongoing freshness.\n\nWithin Snowflake, we used dbt to model structured datasets, standardize KPIs, and resolve inconsistencies across sources. Detailed data exploration and mapping exercises ensured accurate joins despite the absence of native primary and foreign keys.\n\nFinally, we developed a suite of Tableau dashboards tailored to specific business functions, with dynamic filtering and advanced calculations for real time analytics."
+}

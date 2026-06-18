@@ -1,0 +1,16 @@
+{
+  "slug": "modernizing-data-ingestion-and-reducing-integration-costs",
+  "title": "Modernizing Data Ingestion and Reducing Integration Costs",
+  "excerpt": "A growth-stage commerce platform relied on managed data ingestion tooling that became increasingly expensive and restrictive as data volume grew. Customization and control over pipelines were limited.",
+  "body": "",
+  "serviceTags": [],
+  "industry": "",
+  "techStack": [],
+  "seo": {
+    "title": "Modernizing Data Ingestion and Reducing Integration Costs",
+    "description": "A growth-stage commerce platform relied on managed data ingestion tooling that became increasingly expensive and restrictive as data volume grew. Customization and control over pipelines were limited."
+  },
+  "challenge": "A growth-stage commerce platform relied on managed data ingestion tooling that became increasingly expensive and restrictive as data volume grew. Customization and control over pipelines were limited.",
+  "whatWeDid": "Migrated ingestion workflows to a self-hosted, open-source platform. Rebuilt pipelines for web analytics and transactional data, recreated transformation logic, and validated all downstream models to ensure parity.",
+  "outcome": "Lower integration costs, greater control over data pipelines, and a more flexible foundation that supports future data sources without downtime."
+}

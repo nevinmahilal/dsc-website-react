@@ -1,0 +1,93 @@
+---
+title: "Auto-Suspend Is Set to 10 Minutes. Here’s What That Costs You."
+excerpt: "If you set up a Snowflake warehouse in the last few years, auto-suspend is probably still at the default: 5 or 10 minutes. Both are too long for most workloads. A Medium warehouse costs 4 credits/hour."
+date: "2026-03-10T02:28:58.000Z"
+category: "Data Engineering"
+featuredImage: "/images/blog-posts/1ElCcS5JtNykvsAcqtf7wFA.webp"
+seoTitle: "Auto Suspend at 10 Minutes and Its Cost Impact"
+seoDescription: "Auto-suspend set to 10 minutes can drive unnecessary Snowflake costs and inefficiencies. See how Data Solutions Consulting breaks it down. Read more now."
+---
+
+<!-- wp:paragraph -->
+<p><br />If you set up a Snowflake warehouse in the last few years, auto-suspend is probably still at the default: 5 or 10 minutes. Both are too long for most workloads.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>A Medium warehouse costs 4 credits/hour. At 10-minute auto-suspend, every idle event burns up to 0.67 credits before it shuts down. A BI-serving warehouse that resumes 30–40 times a day can rack up meaningful waste. Multiply that across 5–10 warehouses and you’re looking at thousands of dollars a month in idle compute.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>That number will vary. Warehouses don’t always sit idle for the full timer. But even at half the theoretical max, it’s money spent on nothing.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading"><strong>Find your idle waste</strong></h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>This query estimates how many credits you’re burning while no queries are running:</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>sql</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:code -->
+<pre class="wp-block-code"><code>WITH warehouse_usage AS (<br />  SELECT<br />    wmh.warehouse_name,<br />    wmh.start_time,<br />    wmh.credits_used,<br />    wlh.avg_running<br />  FROM SNOWFLAKE.ACCOUNT_USAGE.WAREHOUSE_METERING_HISTORY wmh<br />  LEFT JOIN SNOWFLAKE.ACCOUNT_USAGE.WAREHOUSE_LOAD_HISTORY wlh<br />    ON wmh.warehouse_name = wlh.warehouse_name<br />    AND wmh.start_time = wlh.start_time<br />  WHERE wmh.start_time &gt;= DATEADD('day', -30, CURRENT_TIMESTAMP())<br />)<br />SELECT<br />  warehouse_name,<br />  SUM(credits_used) AS total_credits,<br />  SUM(CASE WHEN COALESCE(avg_running, 0) &lt; 0.1 THEN credits_used ELSE 0 END) AS likely_idle_credits,<br />  ROUND(<br />    SUM(CASE WHEN COALESCE(avg_running, 0) &lt; 0.1 THEN credits_used ELSE 0 END)<br />    / NULLIF(SUM(credits_used), 0) * 100, 1<br />  ) AS idle_pct<br />FROM warehouse_usage<br />GROUP BY warehouse_name<br />ORDER BY likely_idle_credits DESC;</code></pre>
+<!-- /wp:code -->
+
+<!-- wp:paragraph -->
+<p>If <code>idle_pct</code> is above 15% for any warehouse, auto-suspend is almost certainly part of the problem.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading"><strong>Why 60 seconds works for most workloads</strong></h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>The argument against short auto-suspend is cold start time. When a suspended warehouse resumes, there’s a brief delay (usually a few seconds) while Snowflake provisions resources.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>For scheduled dbt runs, COPY INTO, nightly transforms, or any non-interactive workload, this doesn’t matter at all. For BI dashboards, most users won’t notice a 1–2 second cold start. The only case for longer suspend is highly interactive ad-hoc environments where the same users query every few minutes. Even then, 2 minutes usually covers it.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading"><strong>Check your current settings</strong></h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>sql</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:code -->
+<pre class="wp-block-code"><code>SHOW WAREHOUSES;<br />SELECT<br />  "name" AS warehouse_name,<br />  "size" AS warehouse_size,<br />  "auto_suspend" AS auto_suspend_seconds<br />FROM TABLE(RESULT_SCAN(LAST_QUERY_ID()));</code></pre>
+<!-- /wp:code -->
+
+<!-- wp:paragraph -->
+<p>If you see 300 or 600 in that column, those are defaults that were never changed.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading"><strong>Make the change</strong></h2>
+<!-- /wp:heading -->
+
+<!-- wp:code -->
+<pre class="wp-block-code"><code>ALTER WAREHOUSE my_warehouse SET AUTO_SUSPEND = 60;</code></pre>
+<!-- /wp:code -->
+
+<!-- wp:paragraph -->
+<p>Start with non-interactive warehouses (dbt, data loading, scheduled transforms). Zero risk. Then move to BI-serving warehouses and see if anyone notices. Very few teams bump it back up.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:heading -->
+<h2 class="wp-block-heading"><strong>The bigger picture</strong></h2>
+<!-- /wp:heading -->
+
+<!-- wp:paragraph -->
+<p>Auto-suspend is the easiest Snowflake cost fix because it’s low-risk and savings are immediate. But if this setting was never changed, your warehouse sizes probably haven’t been reviewed either. Same logic: defaults made sense at setup, workloads have changed since then.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>The SQL above gets you most of the way there for free. If you want a faster read across your full setup (warehouse sizing, idle waste, auto-suspend, all in one view), <a href="https://dsc-website.local/dsc-optimizer/" target="_blank" rel="noopener">DSC Optimizer </a>flags this automatically. Read-only metadata access, takes about 5 minutes to connect, flat $199/month.</p>
+<!-- /wp:paragraph -->

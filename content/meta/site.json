@@ -7,13 +7,24 @@
     "ogImage": "/images/og-default.jpg"
   },
   "footer": {
-    "copyright": "© 2025 Data Solutions Inc. All rights reserved.",
+    "copyright": "© 2026 Data Solutions Inc. All rights reserved.",
     "social": [
       { "platform": "facebook", "href": "https://www.facebook.com/datasolutionsinc" },
       { "platform": "instagram", "href": "https://www.instagram.com/datasolutionsinc/" },
       { "platform": "linkedin", "href": "https://linkedin.com/company/data-solutions-consulting-inc" },
       { "platform": "tiktok", "href": "https://www.tiktok.com/@datasolutionsinc" }
     ],
-    "contactEmail": "info@datasolutionsinc.ca"
+    "contactEmail": "info@datasolutionsinc.ca",
+    "navLinks": [
+      { "label": "Home", "href": "/" },
+      { "label": "Work", "href": "/work/" },
+      { "label": "About", "href": "/about/" },
+      { "label": "Contact", "href": "/contact/" }
+    ],
+    "company": {
+      "headline": "Stay Updated with the latest news and offers",
+      "ctaLabel": "See Our Work",
+      "ctaHref": "/work/"
+    }
   }
 }

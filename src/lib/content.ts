@@ -23,6 +23,12 @@ interface SiteData {
     social: { platform: string; href: string }[]
     contactEmail: string
     contactPhone?: string
+    navLinks: { label: string; href: string }[]
+    company: {
+      headline: string
+      ctaLabel: string
+      ctaHref: string
+    }
   }
 }
 

@@ -1,9 +1,12 @@
 import Link from 'next/link'
-import { getNavData } from '@/lib/content'
+import { getNavData, getSiteData } from '@/lib/content'
 import { NavDropdown } from './NavDropdown'
+import { MobileNavDrawer } from './MobileNavDrawer'
 
 export function Header() {
   const { items = [] } = getNavData()
+  const { footer } = getSiteData()
+  const ctaItem = items.find(item => item.isCTA)
 
   return (
     <header
@@ -20,7 +23,7 @@ export function Header() {
             DSC
           </Link>
 
-          {/* Desktop nav — hidden on mobile; Story 1.7 adds hamburger + drawer */}
+          {/* Desktop nav — only visible ≥768px */}
           <nav aria-label="Main navigation" className="hidden md:flex items-center gap-8">
             {items.map((item) => {
               if (item.isCTA && item.href) {
@@ -51,6 +54,14 @@ export function Header() {
               return null
             })}
           </nav>
+
+          {/* Mobile: hamburger trigger + drawer — self-contained in MobileNavDrawer */}
+          <MobileNavDrawer
+            navItems={items}
+            socialLinks={footer?.social ?? []}
+            ctaHref={ctaItem?.href ?? '/contact/'}
+            ctaLabel={ctaItem?.label ?? 'Get In Touch'}
+          />
         </div>
       </div>
     </header>

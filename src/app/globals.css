@@ -29,3 +29,9 @@
     animation: scroll 20s linear infinite;
   }
 }
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-marquee {
+    animation: none;
+  }
+}

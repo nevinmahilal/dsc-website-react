@@ -1,5 +1,6 @@
 export { Footer } from './Footer'
 export { Header } from './Header'
 export { HeroSection } from './HeroSection'
+export { LogoMarquee } from './LogoMarquee'
 export { MobileNavDrawer } from './MobileNavDrawer'
 export { NavDropdown } from './NavDropdown'

@@ -15,6 +15,7 @@ export interface PageSection {
 
 // Maps to content/case-studies/{slug}.json
 // serviceTags, industry, techStack drive FR-14 faceted filtering
+// challenge, whatWeDid, outcome are ACF fields present in JSON (confirmed Story 1.3)
 export interface CaseStudy {
   slug: string
   title: string
@@ -23,6 +24,9 @@ export interface CaseStudy {
   serviceTags: string[]
   industry: string
   techStack: string[]
+  challenge?: string    // ACF field; absent from some records
+  whatWeDid?: string    // ACF field; absent from some records
+  outcome?: string      // ACF field; absent from some records
   seo: Seo
 }
 
@@ -95,10 +99,17 @@ export interface AboutPage {
   seo: Seo
 }
 
+// Maps to content/pages/work.json
+// Sections replaced with structured testimonial (Elementor flat sections removed)
 export interface WorkPage {
   slug: string
   title: string
-  sections: PageSection[]
+  testimonial?: {
+    quote: string
+    author?: string
+    company: string
+    companyLogo?: string
+  }
   seo: Seo
 }
 

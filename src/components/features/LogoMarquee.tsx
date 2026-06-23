@@ -10,9 +10,10 @@ interface LogoImage {
 
 interface LogoMarqueeProps {
   images: LogoImage[]
+  label?: string
 }
 
-export function LogoMarquee({ images }: LogoMarqueeProps) {
+export function LogoMarquee({ images, label = 'Customers' }: LogoMarqueeProps) {
   const [paused, setPaused] = useState(false)
 
   if (images.length === 0) return null
@@ -20,12 +21,12 @@ export function LogoMarquee({ images }: LogoMarqueeProps) {
   return (
     <section
       className="py-10 bg-white overflow-hidden"
-      aria-label="Customer logos"
+      aria-label={`${label} logos`}
       onMouseEnter={() => setPaused(true)}
       onMouseLeave={() => setPaused(false)}
     >
       <p className="text-center text-xs tracking-widest uppercase text-cool-charcoal/60 mb-6 font-light">
-        Customers
+        {label}
       </p>
       <div className={`flex animate-marquee${paused ? ' [animation-play-state:paused]' : ''}`}>
         {images.map((logo, i) => (

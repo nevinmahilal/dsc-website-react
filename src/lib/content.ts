@@ -38,6 +38,16 @@ function stripGutenbergComments(html: string): string {
   return html.replace(/<!--\s*\/?wp:[^>]*-->/g, '').trim()
 }
 
+function decodeHtmlEntities(text: string): string {
+  return text
+    .replace(/&amp;/g, '&')
+    .replace(/&lt;/g, '<')
+    .replace(/&gt;/g, '>')
+    .replace(/&quot;/g, '"')
+    .replace(/&#39;/g, "'")
+    .replace(/&nbsp;/g, ' ')
+}
+
 // ===== Case Studies =====
 
 export function getCaseStudies(): CaseStudy[] {
@@ -56,7 +66,12 @@ export function getCaseStudy(slug: string): CaseStudy | null {
   const filePath = path.join(dir, `${slug}.json`)
   if (!filePath.startsWith(dir + path.sep)) return null
   if (!fs.existsSync(filePath)) return null
-  return JSON.parse(fs.readFileSync(filePath, 'utf-8')) as CaseStudy
+  const result = JSON.parse(fs.readFileSync(filePath, 'utf-8')) as CaseStudy
+  if (result.body) result.body = stripGutenbergComments(result.body)
+  if (result.challenge) result.challenge = decodeHtmlEntities(result.challenge)
+  if (result.whatWeDid) result.whatWeDid = decodeHtmlEntities(result.whatWeDid)
+  if (result.outcome) result.outcome = decodeHtmlEntities(result.outcome)
+  return result
 }
 
 // ===== Dashboards =====

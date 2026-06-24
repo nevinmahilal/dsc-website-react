@@ -50,14 +50,17 @@ export function FilterableGrid<T extends object>({
       {
         id: 'title',
         accessorKey: 'title' as keyof T & string,
+        filterFn: 'includesString' as const,
       },
-      ...filterConfigs.map(({ id, isArray }) => ({
-        id,
-        accessorKey: id as keyof T & string,
-        filterFn: isArray
-          ? (arrayIncludesFilter as FilterFn<T>)
-          : ('equalsString' as const),
-      })),
+      ...filterConfigs
+        .filter(f => f.type !== 'search')   // search columns handled by title column above with filterFn: 'includesString'
+        .map(({ id, isArray, type }) => ({
+          id,
+          accessorKey: id as keyof T & string,
+          filterFn: isArray || type === 'checkbox'
+            ? (arrayIncludesFilter as FilterFn<T>)
+            : ('equalsString' as const),
+        })),
     ],
     [filterConfigs]
   )
@@ -76,18 +79,32 @@ export function FilterableGrid<T extends object>({
   })
 
   // Compute unique options for each filter field.
-  // - Array fields (isArray: true): manually flatten unique values from raw data
+  // - search: no options list needed
+  // - checkbox (isArray: true): manually flatten unique values from raw data
   //   (getFacetedUniqueValues does not flatten nested arrays)
-  // - String fields: use TanStack getFacetedUniqueValues via the table column
+  // - radio: derive from full data array so pills remain stable while user types in search
+  // - select: use TanStack getFacetedUniqueValues via the table column
   const filterOptions = useMemo<Record<string, string[]>>(() => {
-    return filterConfigs.reduce<Record<string, string[]>>((acc, { id, isArray }) => {
-      if (isArray) {
+    return filterConfigs.reduce<Record<string, string[]>>((acc, { id, isArray, type }) => {
+      if (type === 'search') return acc
+
+      const effectiveType = type ?? (isArray ? 'checkbox' : 'select')
+
+      if (effectiveType === 'checkbox') {
         const values = new Set<string>()
         data.forEach(item => {
           const val = (item as Record<string, unknown>)[id]
           if (Array.isArray(val)) {
             val.forEach(v => typeof v === 'string' && v && values.add(v))
           }
+        })
+        acc[id] = [...values].sort()
+      } else if (effectiveType === 'radio') {
+        // derive from FULL data array (not filtered table) so pills stay stable during search
+        const values = new Set<string>()
+        data.forEach(item => {
+          const val = (item as Record<string, unknown>)[id]
+          if (typeof val === 'string' && val) values.add(val)
         })
         acc[id] = [...values].sort()
       } else {

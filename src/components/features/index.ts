@@ -1,3 +1,4 @@
+export { BlogPostCard } from './BlogPostCard'
 export { BuiltByDscSection } from './BuiltByDscSection'
 export { DashboardEmbed } from './DashboardEmbed'
 export type { FilterConfig } from './FilterPanel'

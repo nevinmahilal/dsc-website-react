@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import { getBlogPosts } from '@/lib/content'
 import { buildMetadata } from '@/lib/metadata'
-import { BlogPostCard } from '@/components/features'
+import { BlogGrid } from '@/components/features'
 
 export function generateMetadata(): Metadata {
   return buildMetadata({
@@ -26,14 +26,10 @@ export default function OurBlogPage() {
         </div>
       </section>
 
-      {/* Blog Posts */}
+      {/* Blog Posts with filtering */}
       <section className="py-12 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="space-y-4">
-            {posts.map(post => (
-              <BlogPostCard key={post.slug} post={post} />
-            ))}
-          </div>
+          <BlogGrid data={posts} />
         </div>
       </section>
     </main>

@@ -5,7 +5,8 @@ import type { SortingState } from '@tanstack/react-table'
 export interface FilterConfig {
   id: string
   label: string
-  isArray?: boolean
+  type?: 'select' | 'checkbox' | 'radio' | 'search'
+  isArray?: boolean  // keep for backward compat: existing CaseStudiesGrid/DashboardsGrid use isArray without type
 }
 
 interface FilterPanelProps {
@@ -29,10 +30,56 @@ export function FilterPanel({
 
   return (
     <div className="flex flex-wrap gap-3 mb-8">
-      {filterConfigs.map(({ id, label, isArray }) => {
+      {filterConfigs.map(({ id, label, isArray, type }) => {
         const options = filterOptions[id] ?? []
+        // type field takes precedence; fall back to isArray if type is unset
+        const effectiveType = type ?? (isArray ? 'checkbox' : 'select')
 
-        if (isArray) {
+        if (effectiveType === 'search') {
+          const value = (activeFilters[id] as string) ?? ''
+          return (
+            <input
+              key={id}
+              type="text"
+              placeholder={label}
+              value={value}
+              onChange={e => onFilterChange(id, e.target.value)}
+              aria-label={label}
+              className="text-sm font-light text-cool-charcoal border border-cool-charcoal/20 rounded px-3 py-2 bg-white w-64 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-tech-teal"
+            />
+          )
+        }
+
+        if (effectiveType === 'radio') {
+          const selected = (activeFilters[id] as string) ?? ''
+          return (
+            <div key={id} className="flex flex-wrap gap-2" role="radiogroup" aria-label={label}>
+              {['', ...options].map(v => (
+                <label key={v === '' ? '__all__' : v} className="cursor-pointer">
+                  <input
+                    type="radio"
+                    name={id}
+                    value={v}
+                    checked={selected === v}
+                    onChange={() => onFilterChange(id, v)}
+                    className="sr-only"
+                  />
+                  <span
+                    className={`text-sm font-light px-3 py-1.5 rounded border transition-colors ${
+                      selected === v
+                        ? 'bg-tech-teal text-white border-tech-teal'
+                        : 'bg-white text-cool-charcoal border-cool-charcoal/20 hover:border-tech-teal'
+                    }`}
+                  >
+                    {v === '' ? 'All' : v}
+                  </span>
+                </label>
+              ))}
+            </div>
+          )
+        }
+
+        if (effectiveType === 'checkbox') {
           const selected = (activeFilters[id] as string[]) ?? []
           return (
             <details key={id} className="relative group">

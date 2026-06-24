@@ -1,4 +1,5 @@
 export { BuiltByDscSection } from './BuiltByDscSection'
+export { DashboardEmbed } from './DashboardEmbed'
 export type { FilterConfig } from './FilterPanel'
 export { CaseStudiesGrid } from './CaseStudiesGrid'
 export { ContentCard } from './ContentCard'

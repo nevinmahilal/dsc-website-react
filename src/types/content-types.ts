@@ -74,6 +74,10 @@ export interface Career {
   description: string
   requirements: string[]
   seo: Seo
+  careerType?: string
+  location?: string
+  salaryRange?: string
+  startDate?: string
 }
 
 // ===== Page-Level Types (content/pages/) =====

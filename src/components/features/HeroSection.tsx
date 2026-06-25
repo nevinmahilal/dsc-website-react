@@ -23,13 +23,13 @@ export function HeroSection({ hero }: HeroSectionProps) {
       />
 
       <div className="relative z-10 flex flex-col items-center justify-center text-center px-4 py-16 max-w-4xl mx-auto">
-        <h1 className="font-thin text-4xl sm:text-5xl lg:text-6xl xl:text-7xl text-cool-charcoal leading-tight tracking-tight mb-4">
+        <p className="font-thin text-4xl sm:text-5xl lg:text-6xl xl:text-7xl text-cool-charcoal leading-tight tracking-tight mb-4">
           {hero.subheading}
-        </h1>
-
-        <p className="font-light text-lg sm:text-xl text-cool-charcoal/80 max-w-2xl mb-8">
-          {hero.headline}
         </p>
+
+        <h1 className="font-light text-lg sm:text-xl text-cool-charcoal/80 max-w-2xl mb-8">
+          {hero.headline}
+        </h1>
 
         <div className="flex flex-col sm:flex-row items-center gap-4">
           <Link

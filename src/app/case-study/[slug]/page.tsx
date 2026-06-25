@@ -15,7 +15,7 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { slug } = await params
   const study = getCaseStudy(slug)
-  if (!study) return notFound()
+  if (!study) return {}
   return buildMetadata({
     title: study.seo?.title ?? 'Case Study | DSC',
     description: study.seo?.description ?? '',

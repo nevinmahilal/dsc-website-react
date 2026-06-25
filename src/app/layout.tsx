@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import { Outfit } from "next/font/google";
 import "./globals.css";
 import { Footer, Header } from "@/components/features";
+import { getSiteData } from '@/lib/content'
+import { buildMetadata } from '@/lib/metadata'
 
 const outfit = Outfit({
   subsets: ["latin"],
@@ -10,10 +12,14 @@ const outfit = Outfit({
   display: "swap",
 });
 
-export const metadata: Metadata = {
-  title: "DSC | Data Solutions Inc.",
-  description: "Data Solutions Inc. — insights that drive decisions.",
-};
+export function generateMetadata(): Metadata {
+  const site = getSiteData()
+  return buildMetadata({
+    title: site.defaultSeo.title,
+    description: site.defaultSeo.description,
+    canonicalPath: '/',
+  })
+}
 
 export default function RootLayout({
   children,

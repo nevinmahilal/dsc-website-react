@@ -3,6 +3,7 @@ import type { Metadata } from 'next'
 import type { ContactPage } from '@/types/content-types'
 import { getPage, getSiteData } from '@/lib/content'
 import { buildMetadata } from '@/lib/metadata'
+import { ContactForm } from '@/components/features'
 
 function EnvelopeIcon() {
   return (
@@ -92,10 +93,10 @@ export default function ContactPage() {
         </div>
       </section>
 
-      {/* Section 2: ContactForm — added in Story 5.5 */}
-      <section aria-hidden="true" className="py-16 bg-white">
+      {/* Section 2: Contact Form */}
+      <section className="py-16 bg-white">
         <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8">
-          {/* ContactForm component renders here */}
+          <ContactForm />
         </div>
       </section>
 

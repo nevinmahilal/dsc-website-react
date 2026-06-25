@@ -16,7 +16,7 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { slug } = await params
   const dashboard = getWorkPageDashboard(slug)
-  if (!dashboard) return notFound()
+  if (!dashboard) return {}
   return buildMetadata({
     title: dashboard.seo?.title ?? 'Work Dashboard | DSC',
     description: dashboard.seo?.description ?? '',

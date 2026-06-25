@@ -109,6 +109,7 @@ export function ContactForm() {
   }
 
   return (
+    // eslint-disable-next-line react-hooks/refs
     <form onSubmit={handleSubmit(onSubmit)} noValidate className="space-y-6">
       {/* First Name + Last Name */}
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">

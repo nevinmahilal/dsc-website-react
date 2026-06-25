@@ -1,3 +1,5 @@
+export { ContactForm } from './ContactForm'
+export { ReCaptcha } from './ReCaptcha'
 export { BlogPostCard } from './BlogPostCard'
 export { BlogGrid } from './BlogGrid'
 export { BuiltByDscSection } from './BuiltByDscSection'
